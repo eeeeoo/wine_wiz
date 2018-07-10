@@ -10,6 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2018_07_10_044010) do
+
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "pairings", force: :cascade do |t|
+    t.integer "wine_id"
+    t.integer "category_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["category_id"], name: "index_pairings_on_category_id"
+    t.index ["wine_id"], name: "index_pairings_on_wine_id"
+  end
+
+  create_table "wines", force: :cascade do |t|
+    t.string "name"
+    t.string "group"
+    t.string "color"
+    t.string "body"
+    t.string "tannin"
+    t.string "acidity"
+    t.string "flavors"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end

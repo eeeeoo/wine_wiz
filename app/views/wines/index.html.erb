@@ -1,0 +1,28 @@
+<% bold_red_wines = [] %>
+<% med_red_wines = [] %>
+<% light_red_wines = [] %>
+
+<% @wines.each do |wine| %>
+  <% if wine.color == 'Bold Red' %>
+    <% bold_red_wines << wine %>
+  <% end %>
+  <% if wine.color == 'Medium Red' %>
+    <% med_red_wines << wine %>
+  <% end %>
+  <% if wine.color == 'Light Red' %>
+    <% light_red_wines << wine %>
+  <% end %>
+<% end %>
+
+<h4>Bold Red</h4>
+<% bold_red_wines.each do |bold_red| %>
+  <li><%= bold_red.name %></li>
+<% end %> <br>
+<h4>Medium Red</h4>
+<% med_red_wines.each do |med_red| %>
+  <li><%= med_red.name %></li>
+<% end %> <br>
+<h4>Light Red</h4>
+<% light_red_wines.each do |light_red| %>
+  <li><%= light_red.name %></li>
+<% end %>

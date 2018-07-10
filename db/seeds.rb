@@ -40,31 +40,31 @@ carignan = Wine.create(name:'Carignan', group:'red', color:'Light Red', body:'Me
 
 # rich whites -poultry, seafood, soft cheese, mushrooms
 
-chardonnay = Wine.create(name: 'Chardonnay', group: 'white', color: 'Rich White', body: 'Full', tannin: 'Low', acidity: 'Medium', description: 'Lemon, Apple, Pear, Pineapple, Jackfruit, Passionfruit, Peach, Fig, Honeysuckle, Vanilla Bean, Almond, Jasmine')
-semillon = Wine.create(name: 'Sémillon', group: 'white', color: 'Rich White', body: 'Full', tannin: 'Low', acidity: 'Medium', description: 'Lemon, Lime, Yellow Grapefruit, Citrus Zest, Apple, Pear, Green Papaya, Peach, Mango, Honeysuckle, Fig, Honey, Ginger')
-viognier = Wine.create(name: 'Viognier', group: 'white', color: 'Rich White', body: 'Medium', tannin: 'Low', acidity: 'Medium', description: 'Tengerine, Peach, Mango, Honeysuckle, Rose, Vanilla')
-marsanne = Wine.create(name: 'Marsanne', group: 'white', color: 'Rich White', body: 'Full', tannin: 'Low', acidity: 'Low', description: 'Roasted Nuts, Pears, White Peaches, Honeydew Melon, Spice, Dried Apricot, Brioche')
-roussanne = Wine.create(name: 'Roussanne', group: 'white', color: 'Rich White', body: 'Full', tannin: 'Low', acidity: 'Medium', description: 'Peach, Pear, Honeysuckle, Tea, Honey, Roasted Nuts, Vanilla, Fennel')
+chardonnay = Wine.create(name: 'Chardonnay', group: 'white', color: 'Rich White', body: 'Full', tannin: 'Low', acidity: 'Medium', flavors: 'Lemon, Apple, Pear, Pineapple, Jackfruit, Passionfruit, Peach, Fig, Honeysuckle, Vanilla Bean, Almond, Jasmine')
+semillon = Wine.create(name: 'Sémillon', group: 'white', color: 'Rich White', body: 'Full', tannin: 'Low', acidity: 'Medium', flavors: 'Lemon, Lime, Yellow Grapefruit, Citrus Zest, Apple, Pear, Green Papaya, Peach, Mango, Honeysuckle, Fig, Honey, Ginger')
+viognier = Wine.create(name: 'Viognier', group: 'white', color: 'Rich White', body: 'Medium', tannin: 'Low', acidity: 'Medium', flavors: 'Tengerine, Peach, Mango, Honeysuckle, Rose, Vanilla')
+marsanne = Wine.create(name: 'Marsanne', group: 'white', color: 'Rich White', body: 'Full', tannin: 'Low', acidity: 'Low', flavors: 'Roasted Nuts, Pears, White Peaches, Honeydew Melon, Spice, Dried Apricot, Brioche')
+roussanne = Wine.create(name: 'Roussanne', group: 'white', color: 'Rich White', body: 'Full', tannin: 'Low', acidity: 'Medium', flavors: 'Peach, Pear, Honeysuckle, Tea, Honey, Roasted Nuts, Vanilla, Fennel')
 
 # light whites - seafood, green vegetables
 
-sauvignon_blanc = Wine.create(name: 'Sauvignon Blanc', group: 'white', color: 'Light White', body: 'Medium', tannin: 'Low', acidity: 'High', description: 'Lime, Green Apple, Asian Pear, Kiwi, Passion Fruit, Guava, White Peach, Nectarine, Basil, Celery, Lemongrass, Vanilla, Butter')
-pinot_blanc = Wine.create(name: 'Pinot Noir Blanc', group: 'white', color: 'Light White', body: 'Light', tannin: 'Low', acidity: 'Medium', description: 'Baked Apple, Pear, Lemon & Orange Zest, Honey, Ginger, Almond')
-pinot_grigio = Wine.create(name: 'Pinot Grigio', group: 'white', color: 'Light White', body: 'Medium', tannin: 'Low', acidity: 'High', description: 'Lime, Green Apple, Lemon, Meyer Lemon, Pear, White Nectarine, White Peach, Almond, Honeysuckle, Clove, Ginger, Spice')
-vermentino = Wine.create(name: 'Vermentino', group: 'white', color: 'Light White', body: 'Light', tannin: 'Low', acidity: 'Medium', description: 'Lime, Grapefruit, Green Apple, Almond, Citrus Zest, Daffodil')
-trebbiano = Wine.create(name: 'Trebbiano', group: 'white', color: 'Light White', body: 'Light', tannin: 'Low', acidity: 'High', description: 'Neutral, Lemon, Minerals')
+sauvignon_blanc = Wine.create(name: 'Sauvignon Blanc', group: 'white', color: 'Light White', body: 'Medium', tannin: 'Low', acidity: 'High', flavors: 'Lime, Green Apple, Asian Pear, Kiwi, Passion Fruit, Guava, White Peach, Nectarine, Basil, Celery, Lemongrass, Vanilla, Butter')
+pinot_blanc = Wine.create(name: 'Pinot Noir Blanc', group: 'white', color: 'Light White', body: 'Light', tannin: 'Low', acidity: 'Medium', flavors: 'Baked Apple, Pear, Lemon & Orange Zest, Honey, Ginger, Almond')
+pinot_grigio = Wine.create(name: 'Pinot Grigio', group: 'white', color: 'Light White', body: 'Medium', tannin: 'Low', acidity: 'High', flavors: 'Lime, Green Apple, Lemon, Meyer Lemon, Pear, White Nectarine, White Peach, Almond, Honeysuckle, Clove, Ginger, Spice')
+vermentino = Wine.create(name: 'Vermentino', group: 'white', color: 'Light White', body: 'Light', tannin: 'Low', acidity: 'Medium', flavors: 'Lime, Grapefruit, Green Apple, Almond, Citrus Zest, Daffodil')
+trebbiano = Wine.create(name: 'Trebbiano', group: 'white', color: 'Light White', body: 'Light', tannin: 'Low', acidity: 'High', flavors: 'Neutral, Lemon, Minerals')
 
 # sparkling - pork, seafood,
 
-prosecco = Wine.create(name: 'Prosecco', group: 'white', color: 'Sparkling White', body: 'Light', tannin: 'Low', acidity: 'High', description: 'Green Apple, Honeydew Melon, Pear, Honeysuckle')
-cava = Wine.create(name: 'Cava', group: 'white', color: 'Light White', body: 'Medium', tannin: 'Low', acidity: 'High', description: 'Citrus Zest, Apple, Toasted Nuts, Bergamot, Chamomile')
+prosecco = Wine.create(name: 'Prosecco', group: 'white', color: 'Sparkling White', body: 'Light', tannin: 'Low', acidity: 'High', flavors: 'Green Apple, Honeydew Melon, Pear, Honeysuckle')
+cava = Wine.create(name: 'Cava', group: 'white', color: 'Light White', body: 'Medium', tannin: 'Low', acidity: 'High', flavors: 'Citrus Zest, Apple, Toasted Nuts, Bergamot, Chamomile')
 
 # sweet whites - cured meat, nuts&seeds, starchy veg, fruit & berries
 
-moscato = Wine.create(name: 'Moscato', group: 'white', color: 'Sweet White', body: 'Light', tannin: 'Low', acidity: 'High', description: 'Meyer Lemon, Mandarin Orange, Pear, Orange Blossom, Honeysuckle')
-riesling = Wine.create(name: 'Riesling', group: 'white', color: 'Sweet White', body: 'Light', tannin: 'Low', acidity: 'High', description: 'Nectarine, Apricot, Honey-Crisp Apple, Pear, Honeycomb, Jasmine, Lime Peel')
-chenin_blanc = Wine.create(name: 'Chenin Blanc', group: 'white', color: 'Sweet White', body: 'Medium', tannin: 'Low', acidity: 'Medium', description: 'Pear, Baked Apple, Passion Fruit, Lime, Peach, Ginger, Honeysuckle, Jasmine, Chamomile')
-gewurtztraminer = Wine.create(name: 'Gewürtztraminer', group: 'white', color: 'Sweet White', body: 'Medium', tannin: 'Low', acidity: 'Medium', description: 'Lychee, Grapefruit, Pineapple, Peach, Apricot, Orange, Cantaloupe, Rose, Honey, Ginger, Incense, Allspice, Cinnamon, Smoke')
+moscato = Wine.create(name: 'Moscato', group: 'white', color: 'Sweet White', body: 'Light', tannin: 'Low', acidity: 'High', flavors: 'Meyer Lemon, Mandarin Orange, Pear, Orange Blossom, Honeysuckle')
+riesling = Wine.create(name: 'Riesling', group: 'white', color: 'Sweet White', body: 'Light', tannin: 'Low', acidity: 'High', flavors: 'Nectarine, Apricot, Honey-Crisp Apple, Pear, Honeycomb, Jasmine, Lime Peel')
+chenin_blanc = Wine.create(name: 'Chenin Blanc', group: 'white', color: 'Sweet White', body: 'Medium', tannin: 'Low', acidity: 'Medium', flavors: 'Pear, Baked Apple, Passion Fruit, Lime, Peach, Ginger, Honeysuckle, Jasmine, Chamomile')
+gewurtztraminer = Wine.create(name: 'Gewürtztraminer', group: 'white', color: 'Sweet White', body: 'Medium', tannin: 'Low', acidity: 'Medium', flavors: 'Lychee, Grapefruit, Pineapple, Peach, Apricot, Orange, Cantaloupe, Rose, Honey, Ginger, Incense, Allspice, Cinnamon, Smoke')
 
 #pairings
 
@@ -86,7 +86,7 @@ red_poultry = Pairing.create([{wine:pinot_noir, category:poultry}, {wine:grenach
 red_soft_cheese = Pairing.create([{wine:pinot_noir, category:soft_cheese}, {wine:grenache, category:soft_cheese}, {wine:gamay, category:soft_cheese}, {wine:carignan, category:soft_cheese}])
 
 # white wines
-white_red_meat = Pairing.create(wine:moscato, category:red_meat}, {wine:riesling, category:red_meat}, {wine:chenin_blanc, category:red_meat}, {wine:gewurtztraminer, category:red_meat})
+white_red_meat = Pairing.create([{wine:moscato, category:red_meat}, {wine:riesling, category:red_meat}, {wine:chenin_blanc, category:red_meat}, {wine:gewurtztraminer, category:red_meat}])
 white_cured_meat = Pairing.create([{wine:moscato, category:cured_meat}, {wine:riesling, category:cured_meat}, {wine:chenin_blanc, category:cured_meat}, {wine:gewurtztraminer, category:cured_meat}, {category: cured_meat, wine: prosecco}, {category: cured_meat, wine: cava}])
 
 white_pork = Pairing.create([{category: pork, wine: prosecco}, {category: pork, wine: cava}])

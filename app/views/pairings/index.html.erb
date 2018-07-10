@@ -1,0 +1,18 @@
+<!-- <% @pairings.each do |pairing| %>
+<li><%= pairing.category.name %> - <%= pairing.wine.name %></li>
+<% end %> -->
+<!-- <% @pairings.each do |pairing| %>
+<% @pairing = pairing %>
+<% end %> -->
+<%= form_tag(pairings_path, :method => 'get', id: 'search-from') do %>
+<%= radio_button_tag(:group, 'red') %>
+<%= label_tag(:group_red, "Red Wine") %><br>
+<%= radio_button_tag(:group, 'white') %>
+<%= label_tag(:group_white, "White Wine") %><br>
+<%= collection_select(:pairing, :category_id, Category.all, :id, :name, {:prompt => 'Select'})%>
+<%= submit_tag "Pair", :name => nil %>
+<% end %>
+
+<% @pairings.each do |pairing| %>
+<%= link_to pairing.wine.name, pairing.wine %>
+<% end %>
