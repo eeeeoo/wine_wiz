@@ -90,10 +90,10 @@ red_soft_cheese = Pairing.create([{wine:pinot_noir, category:soft_cheese}, {wine
 white_red_meat = Pairing.create(wine:moscato, category:red_meat}, {wine:riesling, category:red_meat}, {wine:chenin_blanc, category:red_meat}, {wine:gewurtztraminer, category:red_meat})
 
 
-white_cured_meat = Pairing.create([{wine:moscato, category:cured_meat}, {wine:riesling, category:cured_meat}, {wine:chenin_blanc, category:cured_meat}, {wine:gewurtztraminer, category:cured_meat}, {category: cured_meat, wine: prosecco}, {category: cured_meat, wine: prosecco}])
+white_cured_meat = Pairing.create([{wine:moscato, category:cured_meat}, {wine:riesling, category:cured_meat}, {wine:chenin_blanc, category:cured_meat}, {wine:gewurtztraminer, category:cured_meat}, {category: cured_meat, wine: prosecco}, {category: cured_meat, wine: cava}])
 
 
-white_pork = Pairing.create([{category: pork, wine: prosecco}, {category: pork, wine: prosecco}])
+white_pork = Pairing.create([{category: pork, wine: prosecco}, {category: pork, wine: cava}])
 
 
 white_poultry = Pairing.create([{category: poultry, wine: chardonnay}, {category: poultry, wine: semillon}, {category: poultry, wine: viognier}, {category: poultry, wine: marsanne}, {category: poultry, wine: roussanne}])
@@ -105,7 +105,7 @@ white_seafood = Pairing.create([{category: seafood, wine: chardonnay}, {category
 white_soft_cheese = Pairing.create([{category: soft_cheese, wine: chardonnay}, {category: soft_cheese, wine: semillon}, {category: soft_cheese, wine: viognier}, {category: soft_cheese, wine: marsanne}, {category: soft_cheese, wine: roussanne}])
 
 
-white_hard_cheese = Pairing.create([{category: hard_cheese, wine: prosecco}, {category: hard_cheese, wine: prosecco}])
+white_hard_cheese = Pairing.create([{category: hard_cheese, wine: prosecco}, {category: hard_cheese, wine: cava}])
 
 
 white_green_vegetable = Pairing.create([{category: green_veg, wine: sauvignon_blanc}, {category: green_veg, wine: pinot_blanc}, {category: green_veg, wine: vermentino}, {category: green_veg, wine: trebbiano}, {category: green_veg, wine: pinot_grigio}, {category: green_veg, wine: prosecco}, {category: green_veg, wine: cava}])
