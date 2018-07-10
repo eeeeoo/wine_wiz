@@ -111,4 +111,10 @@ white_hard_cheese = Pairing.create([{category: hard_cheese, wine: prosecco}, {ca
 white_green_vegetable = Pairing.create([{category: green_veg, wine: sauvignon_blanc}, {category: green_veg, wine: pinot_blanc}, {category: green_veg, wine: vermentino}, {category: green_veg, wine: trebbiano}, {category: green_veg, wine: pinot_grigio}, {category: green_veg, wine: prosecco}, {category: green_veg, wine: cava}])
 
 
-white_starchy_vegetbale = Pairing.create([{category: carbs, wine: chardonnay}, {category: carbs, wine: semillon}, {category: carbs, wine: viognier}, {category: carbs, wine: marsanne}, {category: carbs, wine: roussanne}])
+white_starchy_vegetabale = Pairing.create([{category: starchy_veg, wine: chardonnay}, {category: starchy_veg, wine: semillon}, {category: starchy_veg, wine: viognier}, {category: starchy_veg, wine: marsanne}, {category: starchy_veg, wine: roussanne}])
+
+white_mushrooms = Pairing.create([{wine:chardonnay, category:mushrooms},{wine:semillon, category:mushrooms},{wine:viognier, category:mushrooms},{wine:marsanne, category:mushrooms},{wine:roussanne, category:mushrooms}])
+white_color_veg= Pairing.create([{wine:moscato, category:color_veg},{wine:riesling, category:color_veg},{wine:chenin_blanc, category:color_veg},{wine:gewurtztraminer, category:color_veg}])
+white_nuts_seeds = Pairing.create([{wine:moscato, category:nuts_seeds},{wine:riesling, category:nuts_seeds},{wine:chenin_blanc, category:nuts_seeds},{wine:gewurtztraminer, category:nuts_seeds}])
+white_carbs = Pairing.create([{wine:moscato, category:carbs},{wine:riesling, category:carbs},{wine:chenin_blanc, category:carbs},{wine:gewurtztraminer, category:carbs}])
+white_fruits = Pairing.create([{wine:moscato, category:fruits},{wine:riesling, category:fruits},{wine:chenin_blanc, category:fruits},{wine:gewurtztraminer, category:fruits}])
