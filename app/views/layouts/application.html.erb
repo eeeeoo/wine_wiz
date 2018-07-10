@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wine Wizard</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', "https://fonts.googleapis.com/css?family=Roboto:400,400i",  media: 'all', 'data-turbolinks-track': true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>Wine Wiz</h1>
+    <p>Pairing Method</p>
+    <%= yield %>
+  </body>
+</html>
