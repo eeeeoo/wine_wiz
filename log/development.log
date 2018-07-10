@@ -27147,3 +27147,1342 @@ Processing by PairingsController#index as HTML
 Completed 200 OK in 51ms (Views: 40.3ms | ActiveRecord: 1.5ms)
 
 
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/eeeeoo/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mCategory Destroy (4.3ms)[0m  [1m[31mDELETE FROM "categories"[0m
+  ↳ db/seeds.rb:3
+  [1m[36mWine Destroy (1.0ms)[0m  [1m[31mDELETE FROM "wines"[0m
+  ↳ db/seeds.rb:4
+  [1m[36mPairing Destroy (1.3ms)[0m  [1m[31mDELETE FROM "pairings"[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:7
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Red Meat"], ["description", "(Beef, Lamb, Venison, etc.)"], ["created_at", "2018-07-10 22:00:36.237420"], ["updated_at", "2018-07-10 22:00:36.237420"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Cured Meat"], ["description", "(Salami, Proscuitto, Bresaola, Bacon, etc.)"], ["created_at", "2018-07-10 22:00:36.242070"], ["updated_at", "2018-07-10 22:00:36.242070"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pork"], ["description", "(Roast, Tenderloin, Pork Chop, etc.)"], ["created_at", "2018-07-10 22:00:36.246649"], ["updated_at", "2018-07-10 22:00:36.246649"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Poultry"], ["description", "(Chicken, Duck, Turkey, etc.)"], ["created_at", "2018-07-10 22:00:36.252351"], ["updated_at", "2018-07-10 22:00:36.252351"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Seafood"], ["description", "(Mollusk, Fish, Lobster, Shellfish, etc.)"], ["created_at", "2018-07-10 22:00:36.257014"], ["updated_at", "2018-07-10 22:00:36.257014"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Soft Cheese"], ["description", "(Brie, Mascarpone, Crème Fraîche, etc.)"], ["created_at", "2018-07-10 22:00:36.261943"], ["updated_at", "2018-07-10 22:00:36.261943"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Hard Cheese"], ["description", "(Cheddar, Pecorino, Manchego, Asiago, Parmesan, etc.)"], ["created_at", "2018-07-10 22:00:36.264817"], ["updated_at", "2018-07-10 22:00:36.264817"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Green Vegetables"], ["description", "(Green Bean, Kale, Lettuce, etc.)"], ["created_at", "2018-07-10 22:00:36.267972"], ["updated_at", "2018-07-10 22:00:36.267972"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Starchy Vegetables"], ["description", "(Potato, Corn, Carrot, Sweet Potato, etc.)"], ["created_at", "2018-07-10 22:00:36.270776"], ["updated_at", "2018-07-10 22:00:36.270776"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Red & Orange Vegetables"], ["description", "(Tomato, Peppers, Eggplant, etc.)"], ["created_at", "2018-07-10 22:00:36.273908"], ["updated_at", "2018-07-10 22:00:36.273908"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mushrooms"], ["description", "(Crimini, Portobello, Maitake, etc.)"], ["created_at", "2018-07-10 22:00:36.276946"], ["updated_at", "2018-07-10 22:00:36.276946"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Nuts & Seeds"], ["description", "(Peanut, Almond, Pecan, Sesame, etc.)"], ["created_at", "2018-07-10 22:00:36.280295"], ["updated_at", "2018-07-10 22:00:36.280295"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "White Starches"], ["description", "(Flour, White Rice, Pasta, Bread, Tortillas, etc.)"], ["created_at", "2018-07-10 22:00:36.283121"], ["updated_at", "2018-07-10 22:00:36.283121"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mCategory Create (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Fruit & Berries"], ["description", "(Strawberry, Orange, Apple, Peach, etc.)"], ["created_at", "2018-07-10 22:00:36.285651"], ["updated_at", "2018-07-10 22:00:36.285651"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Syrah"], ["group", "red"], ["color", "Bold Red"], ["body", "Full"], ["tannin", "Medium"], ["acidity", "Medium"], ["flavors", "Blackberry, Blueberry, Boysenberry, Olive, Mint, Chocolate, Vanilla, Tobacco"], ["created_at", "2018-07-10 22:00:36.314088"], ["updated_at", "2018-07-10 22:00:36.314088"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mourvèdre"], ["group", "red"], ["color", "Bold Red"], ["body", "Full"], ["tannin", "High"], ["acidity", "Medium"], ["flavors", "Blueberry, Blackberry, Plum, Black Pepper, Violet, Rose, Smoke"], ["created_at", "2018-07-10 22:00:36.323144"], ["updated_at", "2018-07-10 22:00:36.323144"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Touriga Nacional"], ["group", "red"], ["color", "Bold Red"], ["body", "Full"], ["tannin", "High"], ["acidity", "Medium"], ["flavors", "Violet, Blueberry, Plum, Mint, Wet Slate"], ["created_at", "2018-07-10 22:00:36.326205"], ["updated_at", "2018-07-10 22:00:36.326205"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Carbernet Sauvignon"], ["group", "red"], ["color", "Bold Red"], ["body", "Full"], ["tannin", "Medium"], ["acidity", "Medium"], ["flavors", "Blackcherry, Black Currant, Blackberry, Blackberry, Tobacco, Licorice, Vanilla, Violet"], ["created_at", "2018-07-10 22:00:36.328964"], ["updated_at", "2018-07-10 22:00:36.328964"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Malbec"], ["group", "red"], ["color", "Bold Red"], ["body", "Full"], ["tannin", "Medium"], ["acidity", "Medium"], ["flavors", "Black cherry, Pomengranate, Plum, Raspberry, Blackberry, Blueberry, Raisin, Cocoa, Molasses, Coffee"], ["created_at", "2018-07-10 22:00:36.332553"], ["updated_at", "2018-07-10 22:00:36.332553"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Petite Sirah"], ["group", "red"], ["color", "Bold Red"], ["body", "Full"], ["tannin", "High"], ["acidity", "Medium"], ["flavors", "Plum, Blueberry, Dark Chocolate, Black Pepper, Black Tea"], ["created_at", "2018-07-10 22:00:36.335745"], ["updated_at", "2018-07-10 22:00:36.335745"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mWine Create (0.2ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Merlot"], ["group", "red"], ["color", "Medium Red"], ["body", "Full"], ["tannin", "Medium"], ["acidity", "Medium"], ["flavors", "Black Cherry, Raspberry, Plum, Graphite, Cedar, Tobacco, Vanilla, Clove, Mocha"], ["created_at", "2018-07-10 22:00:36.338604"], ["updated_at", "2018-07-10 22:00:36.338604"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mWine Create (0.2ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sangiovese"], ["group", "red"], ["color", "Medium Red"], ["body", "Medium"], ["tannin", "High"], ["acidity", "High"], ["flavors", "Tart Cherry, Red Plum, Strawberry, Fig, Tomato, Leather, Clay, Brick, Tobacco, Smoke, Oregano"], ["created_at", "2018-07-10 22:00:36.340963"], ["updated_at", "2018-07-10 22:00:36.340963"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:33
+  [1m[36mWine Create (0.2ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tempranillo"], ["group", "red"], ["color", "Medium Red"], ["body", "Medium"], ["tannin", "Medium"], ["acidity", "Medium"], ["flavors", "Cherry, Plum, Tomato, Fig, Cedar, Leather, Tobacco, Vanilla, Dill, Clove"], ["created_at", "2018-07-10 22:00:36.343134"], ["updated_at", "2018-07-10 22:00:36.343134"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Carbernet Franc"], ["group", "red"], ["color", "Medium Red"], ["body", "Medium"], ["tannin", "Medium"], ["acidity", "Medium"], ["flavors", "Strawberry, Roasted Pepper, Red Plum, Gravel, Chili Pepper"], ["created_at", "2018-07-10 22:00:36.346019"], ["updated_at", "2018-07-10 22:00:36.346019"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:35
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Zinfandel"], ["group", "red"], ["color", "Medium Red"], ["body", "Full"], ["tannin", "Medium"], ["acidity", "Medium"], ["flavors", "Raspberry, Black Cherry, Blackberry, Blueberry, Black Currant, Raisin, Fig, Apricot"], ["created_at", "2018-07-10 22:00:36.348473"], ["updated_at", "2018-07-10 22:00:36.348473"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:38
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pinot Noir"], ["group", "red"], ["color", "Light Red"], ["body", "Medium"], ["tannin", "Medium"], ["acidity", "Medium"], ["flavors", "Cranberry, Cherry, Raspberry, Vanilla, Clove, Licorice, Mushroom, Wet Leaves"], ["created_at", "2018-07-10 22:00:36.351156"], ["updated_at", "2018-07-10 22:00:36.351156"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:39
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Grenache"], ["group", "red"], ["color", "Light Red"], ["body", "Medium"], ["tannin", "Medium"], ["acidity", "Medium"], ["flavors", "Strawberry, Black Cherry, Raspberry, Anise, Tobacco, Citrus Rind, Cinnamon"], ["created_at", "2018-07-10 22:00:36.353679"], ["updated_at", "2018-07-10 22:00:36.353679"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:40
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gamay"], ["group", "red"], ["color", "Light Red"], ["body", "Medium"], ["tannin", "Low"], ["acidity", "Medium"], ["flavors", "Black Currant, Raspberry, Violet, Potting Soil, Banana"], ["created_at", "2018-07-10 22:00:36.356711"], ["updated_at", "2018-07-10 22:00:36.356711"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[36mWine Create (0.2ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Carignan"], ["group", "red"], ["color", "Light Red"], ["body", "Medium"], ["tannin", "Medium"], ["acidity", "Medium"], ["flavors", "Dried Cranberry, Raspberry, Licorice, Baking Spices, Cured Meat"], ["created_at", "2018-07-10 22:00:36.359997"], ["updated_at", "2018-07-10 22:00:36.359997"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chardonnay"], ["group", "white"], ["color", "Rich White"], ["body", "Full"], ["tannin", "Low"], ["acidity", "Medium"], ["flavors", "Lemon, Apple, Pear, Pineapple, Jackfruit, Passionfruit, Peach, Fig, Honeysuckle, Vanilla Bean, Almond, Jasmine"], ["created_at", "2018-07-10 22:00:36.362936"], ["updated_at", "2018-07-10 22:00:36.362936"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:46
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sémillon"], ["group", "white"], ["color", "Rich White"], ["body", "Full"], ["tannin", "Low"], ["acidity", "Medium"], ["flavors", "Lemon, Lime, Yellow Grapefruit, Citrus Zest, Apple, Pear, Green Papaya, Peach, Mango, Honeysuckle, Fig, Honey, Ginger"], ["created_at", "2018-07-10 22:00:36.365668"], ["updated_at", "2018-07-10 22:00:36.365668"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:47
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Viognier"], ["group", "white"], ["color", "Rich White"], ["body", "Medium"], ["tannin", "Low"], ["acidity", "Medium"], ["flavors", "Tengerine, Peach, Mango, Honeysuckle, Rose, Vanilla"], ["created_at", "2018-07-10 22:00:36.368924"], ["updated_at", "2018-07-10 22:00:36.368924"]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:48
+  [1m[36mWine Create (0.2ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Marsanne"], ["group", "white"], ["color", "Rich White"], ["body", "Full"], ["tannin", "Low"], ["acidity", "Low"], ["flavors", "Roasted Nuts, Pears, White Peaches, Honeydew Melon, Spice, Dried Apricot, Brioche"], ["created_at", "2018-07-10 22:00:36.372577"], ["updated_at", "2018-07-10 22:00:36.372577"]]
+  ↳ db/seeds.rb:48
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:49
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Roussanne"], ["group", "white"], ["color", "Rich White"], ["body", "Full"], ["tannin", "Low"], ["acidity", "Medium"], ["flavors", "Peach, Pear, Honeysuckle, Tea, Honey, Roasted Nuts, Vanilla, Fennel"], ["created_at", "2018-07-10 22:00:36.375206"], ["updated_at", "2018-07-10 22:00:36.375206"]]
+  ↳ db/seeds.rb:49
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:53
+  [1m[36mWine Create (0.4ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sauvignon Blanc"], ["group", "white"], ["color", "Light White"], ["body", "Medium"], ["tannin", "Low"], ["acidity", "High"], ["flavors", "Lime, Green Apple, Asian Pear, Kiwi, Passion Fruit, Guava, White Peach, Nectarine, Basil, Celery, Lemongrass, Vanilla, Butter"], ["created_at", "2018-07-10 22:00:36.378191"], ["updated_at", "2018-07-10 22:00:36.378191"]]
+  ↳ db/seeds.rb:53
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:53
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:54
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pinot Noir Blanc"], ["group", "white"], ["color", "Light White"], ["body", "Light"], ["tannin", "Low"], ["acidity", "Medium"], ["flavors", "Baked Apple, Pear, Lemon & Orange Zest, Honey, Ginger, Almond"], ["created_at", "2018-07-10 22:00:36.381106"], ["updated_at", "2018-07-10 22:00:36.381106"]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:55
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pinot Grigio"], ["group", "white"], ["color", "Light White"], ["body", "Medium"], ["tannin", "Low"], ["acidity", "High"], ["flavors", "Lime, Green Apple, Lemon, Meyer Lemon, Pear, White Nectarine, White Peach, Almond, Honeysuckle, Clove, Ginger, Spice"], ["created_at", "2018-07-10 22:00:36.384227"], ["updated_at", "2018-07-10 22:00:36.384227"]]
+  ↳ db/seeds.rb:55
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:56
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vermentino"], ["group", "white"], ["color", "Light White"], ["body", "Light"], ["tannin", "Low"], ["acidity", "Medium"], ["flavors", "Lime, Grapefruit, Green Apple, Almond, Citrus Zest, Daffodil"], ["created_at", "2018-07-10 22:00:36.387464"], ["updated_at", "2018-07-10 22:00:36.387464"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:57
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Trebbiano"], ["group", "white"], ["color", "Light White"], ["body", "Light"], ["tannin", "Low"], ["acidity", "High"], ["flavors", "Neutral, Lemon, Minerals"], ["created_at", "2018-07-10 22:00:36.390228"], ["updated_at", "2018-07-10 22:00:36.390228"]]
+  ↳ db/seeds.rb:57
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:57
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:61
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Prosecco"], ["group", "white"], ["color", "Sparkling White"], ["body", "Light"], ["tannin", "Low"], ["acidity", "High"], ["flavors", "Green Apple, Honeydew Melon, Pear, Honeysuckle"], ["created_at", "2018-07-10 22:00:36.393338"], ["updated_at", "2018-07-10 22:00:36.393338"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:62
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cava"], ["group", "white"], ["color", "Light White"], ["body", "Medium"], ["tannin", "Low"], ["acidity", "High"], ["flavors", "Citrus Zest, Apple, Toasted Nuts, Bergamot, Chamomile"], ["created_at", "2018-07-10 22:00:36.396054"], ["updated_at", "2018-07-10 22:00:36.396054"]]
+  ↳ db/seeds.rb:62
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:62
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:66
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Moscato"], ["group", "white"], ["color", "Sweet White"], ["body", "Light"], ["tannin", "Low"], ["acidity", "High"], ["flavors", "Meyer Lemon, Mandarin Orange, Pear, Orange Blossom, Honeysuckle"], ["created_at", "2018-07-10 22:00:36.399831"], ["updated_at", "2018-07-10 22:00:36.399831"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Riesling"], ["group", "white"], ["color", "Sweet White"], ["body", "Light"], ["tannin", "Low"], ["acidity", "High"], ["flavors", "Nectarine, Apricot, Honey-Crisp Apple, Pear, Honeycomb, Jasmine, Lime Peel"], ["created_at", "2018-07-10 22:00:36.402985"], ["updated_at", "2018-07-10 22:00:36.402985"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:68
+  [1m[36mWine Create (0.3ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chenin Blanc"], ["group", "white"], ["color", "Sweet White"], ["body", "Medium"], ["tannin", "Low"], ["acidity", "Medium"], ["flavors", "Pear, Baked Apple, Passion Fruit, Lime, Peach, Ginger, Honeysuckle, Jasmine, Chamomile"], ["created_at", "2018-07-10 22:00:36.405877"], ["updated_at", "2018-07-10 22:00:36.405877"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:69
+  [1m[36mWine Create (0.2ms)[0m  [1m[32mINSERT INTO "wines" ("name", "group", "color", "body", "tannin", "acidity", "flavors", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gewürtztraminer"], ["group", "white"], ["color", "Sweet White"], ["body", "Medium"], ["tannin", "Low"], ["acidity", "Medium"], ["flavors", "Lychee, Grapefruit, Pineapple, Peach, Apricot, Orange, Cantaloupe, Rose, Honey, Ginger, Incense, Allspice, Cinnamon, Smoke"], ["created_at", "2018-07-10 22:00:36.408923"], ["updated_at", "2018-07-10 22:00:36.408923"]]
+  ↳ db/seeds.rb:69
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:75
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 32], ["category_id", 15], ["created_at", "2018-07-10 22:00:36.424507"], ["updated_at", "2018-07-10 22:00:36.424507"]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:75
+  [1m[36mPairing Create (0.2ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 33], ["category_id", 15], ["created_at", "2018-07-10 22:00:36.429354"], ["updated_at", "2018-07-10 22:00:36.429354"]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:75
+  [1m[36mPairing Create (0.5ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 34], ["category_id", 15], ["created_at", "2018-07-10 22:00:36.432153"], ["updated_at", "2018-07-10 22:00:36.432153"]]
+  ↳ db/seeds.rb:75
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:75
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 35], ["category_id", 15], ["created_at", "2018-07-10 22:00:36.436719"], ["updated_at", "2018-07-10 22:00:36.436719"]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:75
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 36], ["category_id", 15], ["created_at", "2018-07-10 22:00:36.439499"], ["updated_at", "2018-07-10 22:00:36.439499"]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:75
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 37], ["category_id", 15], ["created_at", "2018-07-10 22:00:36.442437"], ["updated_at", "2018-07-10 22:00:36.442437"]]
+  ↳ db/seeds.rb:75
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:76
+  [1m[36mPairing Create (0.4ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 32], ["category_id", 21], ["created_at", "2018-07-10 22:00:36.447031"], ["updated_at", "2018-07-10 22:00:36.447031"]]
+  ↳ db/seeds.rb:76
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:76
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 33], ["category_id", 21], ["created_at", "2018-07-10 22:00:36.450881"], ["updated_at", "2018-07-10 22:00:36.450881"]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:76
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 34], ["category_id", 21], ["created_at", "2018-07-10 22:00:36.453356"], ["updated_at", "2018-07-10 22:00:36.453356"]]
+  ↳ db/seeds.rb:76
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:76
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 35], ["category_id", 21], ["created_at", "2018-07-10 22:00:36.456577"], ["updated_at", "2018-07-10 22:00:36.456577"]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:76
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 36], ["category_id", 21], ["created_at", "2018-07-10 22:00:36.459639"], ["updated_at", "2018-07-10 22:00:36.459639"]]
+  ↳ db/seeds.rb:76
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:76
+  [1m[36mPairing Create (0.5ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 37], ["category_id", 15], ["created_at", "2018-07-10 22:00:36.463708"], ["updated_at", "2018-07-10 22:00:36.463708"]]
+  ↳ db/seeds.rb:76
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:78
+  [1m[36mPairing Create (0.2ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 38], ["category_id", 17], ["created_at", "2018-07-10 22:00:36.467405"], ["updated_at", "2018-07-10 22:00:36.467405"]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:78
+  [1m[36mPairing Create (0.5ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 39], ["category_id", 17], ["created_at", "2018-07-10 22:00:36.472978"], ["updated_at", "2018-07-10 22:00:36.472978"]]
+  ↳ db/seeds.rb:78
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:78
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 40], ["category_id", 17], ["created_at", "2018-07-10 22:00:36.477014"], ["updated_at", "2018-07-10 22:00:36.477014"]]
+  ↳ db/seeds.rb:78
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:78
+  [1m[36mPairing Create (0.4ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 41], ["category_id", 17], ["created_at", "2018-07-10 22:00:36.481631"], ["updated_at", "2018-07-10 22:00:36.481631"]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:78
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 42], ["category_id", 17], ["created_at", "2018-07-10 22:00:36.485935"], ["updated_at", "2018-07-10 22:00:36.485935"]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[36mPairing Create (0.7ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 38], ["category_id", 23], ["created_at", "2018-07-10 22:00:36.489139"], ["updated_at", "2018-07-10 22:00:36.489139"]]
+  ↳ db/seeds.rb:79
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 39], ["category_id", 23], ["created_at", "2018-07-10 22:00:36.492697"], ["updated_at", "2018-07-10 22:00:36.492697"]]
+  ↳ db/seeds.rb:79
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 40], ["category_id", 23], ["created_at", "2018-07-10 22:00:36.496304"], ["updated_at", "2018-07-10 22:00:36.496304"]]
+  ↳ db/seeds.rb:79
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 41], ["category_id", 23], ["created_at", "2018-07-10 22:00:36.501406"], ["updated_at", "2018-07-10 22:00:36.501406"]]
+  ↳ db/seeds.rb:79
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[36mPairing Create (0.9ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 42], ["category_id", 23], ["created_at", "2018-07-10 22:00:36.505519"], ["updated_at", "2018-07-10 22:00:36.505519"]]
+  ↳ db/seeds.rb:79
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:80
+  [1m[36mPairing Create (0.4ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 38], ["category_id", 25], ["created_at", "2018-07-10 22:00:36.509775"], ["updated_at", "2018-07-10 22:00:36.509775"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:80
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 39], ["category_id", 25], ["created_at", "2018-07-10 22:00:36.513717"], ["updated_at", "2018-07-10 22:00:36.513717"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:80
+  [1m[36mPairing Create (0.4ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 40], ["category_id", 25], ["created_at", "2018-07-10 22:00:36.517820"], ["updated_at", "2018-07-10 22:00:36.517820"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:80
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 41], ["category_id", 25], ["created_at", "2018-07-10 22:00:36.525591"], ["updated_at", "2018-07-10 22:00:36.525591"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:80
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 42], ["category_id", 25], ["created_at", "2018-07-10 22:00:36.528446"], ["updated_at", "2018-07-10 22:00:36.528446"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:80
+  [1m[36mPairing Create (0.5ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 43], ["category_id", 25], ["created_at", "2018-07-10 22:00:36.531864"], ["updated_at", "2018-07-10 22:00:36.531864"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:80
+  [1m[36mPairing Create (0.4ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 44], ["category_id", 25], ["created_at", "2018-07-10 22:00:36.535894"], ["updated_at", "2018-07-10 22:00:36.535894"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:80
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 45], ["category_id", 25], ["created_at", "2018-07-10 22:00:36.540025"], ["updated_at", "2018-07-10 22:00:36.540025"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:80
+  [1m[36mPairing Create (0.2ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 46], ["category_id", 25], ["created_at", "2018-07-10 22:00:36.542889"], ["updated_at", "2018-07-10 22:00:36.542889"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:86
+  [1m[36mPairing Create (0.2ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 43], ["category_id", 16], ["created_at", "2018-07-10 22:00:36.545861"], ["updated_at", "2018-07-10 22:00:36.545861"]]
+  ↳ db/seeds.rb:86
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:86
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:86
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 44], ["category_id", 16], ["created_at", "2018-07-10 22:00:36.548432"], ["updated_at", "2018-07-10 22:00:36.548432"]]
+  ↳ db/seeds.rb:86
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:86
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:86
+  [1m[36mPairing Create (0.2ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 45], ["category_id", 16], ["created_at", "2018-07-10 22:00:36.551266"], ["updated_at", "2018-07-10 22:00:36.551266"]]
+  ↳ db/seeds.rb:86
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:86
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:86
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 46], ["category_id", 16], ["created_at", "2018-07-10 22:00:36.553634"], ["updated_at", "2018-07-10 22:00:36.553634"]]
+  ↳ db/seeds.rb:86
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:86
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:87
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 43], ["category_id", 18], ["created_at", "2018-07-10 22:00:36.556868"], ["updated_at", "2018-07-10 22:00:36.556868"]]
+  ↳ db/seeds.rb:87
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:87
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:87
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 44], ["category_id", 18], ["created_at", "2018-07-10 22:00:36.559455"], ["updated_at", "2018-07-10 22:00:36.559455"]]
+  ↳ db/seeds.rb:87
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:87
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:87
+  [1m[36mPairing Create (0.2ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 45], ["category_id", 18], ["created_at", "2018-07-10 22:00:36.562133"], ["updated_at", "2018-07-10 22:00:36.562133"]]
+  ↳ db/seeds.rb:87
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:87
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:87
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 46], ["category_id", 18], ["created_at", "2018-07-10 22:00:36.565001"], ["updated_at", "2018-07-10 22:00:36.565001"]]
+  ↳ db/seeds.rb:87
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:87
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:88
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 43], ["category_id", 20], ["created_at", "2018-07-10 22:00:36.568254"], ["updated_at", "2018-07-10 22:00:36.568254"]]
+  ↳ db/seeds.rb:88
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:88
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:88
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 44], ["category_id", 20], ["created_at", "2018-07-10 22:00:36.571355"], ["updated_at", "2018-07-10 22:00:36.571355"]]
+  ↳ db/seeds.rb:88
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:88
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:88
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 45], ["category_id", 20], ["created_at", "2018-07-10 22:00:36.578161"], ["updated_at", "2018-07-10 22:00:36.578161"]]
+  ↳ db/seeds.rb:88
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:88
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:88
+  [1m[36mPairing Create (0.4ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 46], ["category_id", 20], ["created_at", "2018-07-10 22:00:36.584444"], ["updated_at", "2018-07-10 22:00:36.584444"]]
+  ↳ db/seeds.rb:88
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:88
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:91
+  [1m[36mPairing Create (0.4ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 59], ["category_id", 15], ["created_at", "2018-07-10 22:00:36.588600"], ["updated_at", "2018-07-10 22:00:36.588600"]]
+  ↳ db/seeds.rb:91
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:91
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:91
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 60], ["category_id", 15], ["created_at", "2018-07-10 22:00:36.591808"], ["updated_at", "2018-07-10 22:00:36.591808"]]
+  ↳ db/seeds.rb:91
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:91
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:91
+  [1m[36mPairing Create (0.4ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 61], ["category_id", 15], ["created_at", "2018-07-10 22:00:36.595277"], ["updated_at", "2018-07-10 22:00:36.595277"]]
+  ↳ db/seeds.rb:91
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:91
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:91
+  [1m[36mPairing Create (0.6ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 62], ["category_id", 15], ["created_at", "2018-07-10 22:00:36.598892"], ["updated_at", "2018-07-10 22:00:36.598892"]]
+  ↳ db/seeds.rb:91
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:91
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:92
+  [1m[36mPairing Create (0.6ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 59], ["category_id", 16], ["created_at", "2018-07-10 22:00:36.601881"], ["updated_at", "2018-07-10 22:00:36.601881"]]
+  ↳ db/seeds.rb:92
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:92
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:92
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 60], ["category_id", 16], ["created_at", "2018-07-10 22:00:36.605032"], ["updated_at", "2018-07-10 22:00:36.605032"]]
+  ↳ db/seeds.rb:92
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:92
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:92
+  [1m[36mPairing Create (0.4ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 61], ["category_id", 16], ["created_at", "2018-07-10 22:00:36.608851"], ["updated_at", "2018-07-10 22:00:36.608851"]]
+  ↳ db/seeds.rb:92
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:92
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:92
+  [1m[36mPairing Create (0.4ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 62], ["category_id", 16], ["created_at", "2018-07-10 22:00:36.613804"], ["updated_at", "2018-07-10 22:00:36.613804"]]
+  ↳ db/seeds.rb:92
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:92
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:92
+  [1m[36mPairing Create (1.1ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 57], ["category_id", 16], ["created_at", "2018-07-10 22:00:36.622061"], ["updated_at", "2018-07-10 22:00:36.622061"]]
+  ↳ db/seeds.rb:92
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:92
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:92
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 58], ["category_id", 16], ["created_at", "2018-07-10 22:00:36.626798"], ["updated_at", "2018-07-10 22:00:36.626798"]]
+  ↳ db/seeds.rb:92
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:92
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:94
+  [1m[36mPairing Create (0.2ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 57], ["category_id", 17], ["created_at", "2018-07-10 22:00:36.629861"], ["updated_at", "2018-07-10 22:00:36.629861"]]
+  ↳ db/seeds.rb:94
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:94
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:94
+  [1m[36mPairing Create (0.4ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 58], ["category_id", 17], ["created_at", "2018-07-10 22:00:36.632812"], ["updated_at", "2018-07-10 22:00:36.632812"]]
+  ↳ db/seeds.rb:94
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:94
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:95
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 57], ["category_id", 21], ["created_at", "2018-07-10 22:00:36.636009"], ["updated_at", "2018-07-10 22:00:36.636009"]]
+  ↳ db/seeds.rb:95
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:95
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:95
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 58], ["category_id", 21], ["created_at", "2018-07-10 22:00:36.639073"], ["updated_at", "2018-07-10 22:00:36.639073"]]
+  ↳ db/seeds.rb:95
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:95
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:97
+  [1m[36mPairing Create (0.2ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 52], ["category_id", 22], ["created_at", "2018-07-10 22:00:36.641752"], ["updated_at", "2018-07-10 22:00:36.641752"]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:97
+  [1m[36mPairing Create (0.6ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 53], ["category_id", 22], ["created_at", "2018-07-10 22:00:36.644647"], ["updated_at", "2018-07-10 22:00:36.644647"]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:97
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 55], ["category_id", 22], ["created_at", "2018-07-10 22:00:36.647861"], ["updated_at", "2018-07-10 22:00:36.647861"]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:97
+  [1m[36mPairing Create (0.4ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 56], ["category_id", 22], ["created_at", "2018-07-10 22:00:36.650739"], ["updated_at", "2018-07-10 22:00:36.650739"]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:97
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 54], ["category_id", 22], ["created_at", "2018-07-10 22:00:36.653169"], ["updated_at", "2018-07-10 22:00:36.653169"]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:97
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 57], ["category_id", 22], ["created_at", "2018-07-10 22:00:36.656804"], ["updated_at", "2018-07-10 22:00:36.656804"]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:97
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 58], ["category_id", 22], ["created_at", "2018-07-10 22:00:36.659890"], ["updated_at", "2018-07-10 22:00:36.659890"]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 47], ["category_id", 19], ["created_at", "2018-07-10 22:00:36.662801"], ["updated_at", "2018-07-10 22:00:36.662801"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[36mPairing Create (0.6ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 49], ["category_id", 19], ["created_at", "2018-07-10 22:00:36.666300"], ["updated_at", "2018-07-10 22:00:36.666300"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 52], ["category_id", 19], ["created_at", "2018-07-10 22:00:36.672010"], ["updated_at", "2018-07-10 22:00:36.672010"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 54], ["category_id", 19], ["created_at", "2018-07-10 22:00:36.678673"], ["updated_at", "2018-07-10 22:00:36.678673"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 52], ["category_id", 19], ["created_at", "2018-07-10 22:00:36.683550"], ["updated_at", "2018-07-10 22:00:36.683550"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[36mPairing Create (0.4ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 53], ["category_id", 19], ["created_at", "2018-07-10 22:00:36.690867"], ["updated_at", "2018-07-10 22:00:36.690867"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 55], ["category_id", 19], ["created_at", "2018-07-10 22:00:36.694273"], ["updated_at", "2018-07-10 22:00:36.694273"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 56], ["category_id", 19], ["created_at", "2018-07-10 22:00:36.697721"], ["updated_at", "2018-07-10 22:00:36.697721"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 54], ["category_id", 19], ["created_at", "2018-07-10 22:00:36.700527"], ["updated_at", "2018-07-10 22:00:36.700527"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[36mPairing Create (0.2ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 57], ["category_id", 19], ["created_at", "2018-07-10 22:00:36.703455"], ["updated_at", "2018-07-10 22:00:36.703455"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 58], ["category_id", 19], ["created_at", "2018-07-10 22:00:36.706119"], ["updated_at", "2018-07-10 22:00:36.706119"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:101
+  [1m[36mPairing Create (7.0ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 47], ["category_id", 18], ["created_at", "2018-07-10 22:00:36.708940"], ["updated_at", "2018-07-10 22:00:36.708940"]]
+  ↳ db/seeds.rb:101
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:101
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:101
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 48], ["category_id", 18], ["created_at", "2018-07-10 22:00:36.720569"], ["updated_at", "2018-07-10 22:00:36.720569"]]
+  ↳ db/seeds.rb:101
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:101
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:101
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 49], ["category_id", 18], ["created_at", "2018-07-10 22:00:36.723178"], ["updated_at", "2018-07-10 22:00:36.723178"]]
+  ↳ db/seeds.rb:101
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:101
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:101
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 50], ["category_id", 18], ["created_at", "2018-07-10 22:00:36.725967"], ["updated_at", "2018-07-10 22:00:36.725967"]]
+  ↳ db/seeds.rb:101
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:101
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:101
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 51], ["category_id", 18], ["created_at", "2018-07-10 22:00:36.728759"], ["updated_at", "2018-07-10 22:00:36.728759"]]
+  ↳ db/seeds.rb:101
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:101
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:102
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 47], ["category_id", 23], ["created_at", "2018-07-10 22:00:36.731867"], ["updated_at", "2018-07-10 22:00:36.731867"]]
+  ↳ db/seeds.rb:102
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:102
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:102
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 48], ["category_id", 23], ["created_at", "2018-07-10 22:00:36.734487"], ["updated_at", "2018-07-10 22:00:36.734487"]]
+  ↳ db/seeds.rb:102
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:102
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:102
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 49], ["category_id", 23], ["created_at", "2018-07-10 22:00:36.736893"], ["updated_at", "2018-07-10 22:00:36.736893"]]
+  ↳ db/seeds.rb:102
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:102
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:102
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 50], ["category_id", 23], ["created_at", "2018-07-10 22:00:36.739296"], ["updated_at", "2018-07-10 22:00:36.739296"]]
+  ↳ db/seeds.rb:102
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:102
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:102
+  [1m[36mPairing Create (0.2ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 51], ["category_id", 23], ["created_at", "2018-07-10 22:00:36.741844"], ["updated_at", "2018-07-10 22:00:36.741844"]]
+  ↳ db/seeds.rb:102
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:102
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:103
+  [1m[36mPairing Create (0.4ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 47], ["category_id", 25], ["created_at", "2018-07-10 22:00:36.744393"], ["updated_at", "2018-07-10 22:00:36.744393"]]
+  ↳ db/seeds.rb:103
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:103
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:103
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 48], ["category_id", 25], ["created_at", "2018-07-10 22:00:36.747273"], ["updated_at", "2018-07-10 22:00:36.747273"]]
+  ↳ db/seeds.rb:103
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:103
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:103
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 49], ["category_id", 25], ["created_at", "2018-07-10 22:00:36.750230"], ["updated_at", "2018-07-10 22:00:36.750230"]]
+  ↳ db/seeds.rb:103
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:103
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:103
+  [1m[36mPairing Create (0.2ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 50], ["category_id", 25], ["created_at", "2018-07-10 22:00:36.752821"], ["updated_at", "2018-07-10 22:00:36.752821"]]
+  ↳ db/seeds.rb:103
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:103
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:103
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 51], ["category_id", 25], ["created_at", "2018-07-10 22:00:36.754956"], ["updated_at", "2018-07-10 22:00:36.754956"]]
+  ↳ db/seeds.rb:103
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:103
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:104
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 47], ["category_id", 20], ["created_at", "2018-07-10 22:00:36.758030"], ["updated_at", "2018-07-10 22:00:36.758030"]]
+  ↳ db/seeds.rb:104
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:104
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:104
+  [1m[36mPairing Create (0.2ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 48], ["category_id", 20], ["created_at", "2018-07-10 22:00:36.760836"], ["updated_at", "2018-07-10 22:00:36.760836"]]
+  ↳ db/seeds.rb:104
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:104
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:104
+  [1m[36mPairing Create (0.2ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 49], ["category_id", 20], ["created_at", "2018-07-10 22:00:36.763131"], ["updated_at", "2018-07-10 22:00:36.763131"]]
+  ↳ db/seeds.rb:104
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:104
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:104
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 50], ["category_id", 20], ["created_at", "2018-07-10 22:00:36.765173"], ["updated_at", "2018-07-10 22:00:36.765173"]]
+  ↳ db/seeds.rb:104
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:104
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:104
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 51], ["category_id", 20], ["created_at", "2018-07-10 22:00:36.767537"], ["updated_at", "2018-07-10 22:00:36.767537"]]
+  ↳ db/seeds.rb:104
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:104
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:106
+  [1m[36mPairing Create (0.5ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 59], ["category_id", 24], ["created_at", "2018-07-10 22:00:36.770717"], ["updated_at", "2018-07-10 22:00:36.770717"]]
+  ↳ db/seeds.rb:106
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:106
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:106
+  [1m[36mPairing Create (0.2ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 60], ["category_id", 24], ["created_at", "2018-07-10 22:00:36.773552"], ["updated_at", "2018-07-10 22:00:36.773552"]]
+  ↳ db/seeds.rb:106
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:106
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:106
+  [1m[36mPairing Create (0.5ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 61], ["category_id", 24], ["created_at", "2018-07-10 22:00:36.778709"], ["updated_at", "2018-07-10 22:00:36.778709"]]
+  ↳ db/seeds.rb:106
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:106
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:106
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 62], ["category_id", 24], ["created_at", "2018-07-10 22:00:36.785976"], ["updated_at", "2018-07-10 22:00:36.785976"]]
+  ↳ db/seeds.rb:106
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:106
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:107
+  [1m[36mPairing Create (1.1ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 59], ["category_id", 26], ["created_at", "2018-07-10 22:00:36.789228"], ["updated_at", "2018-07-10 22:00:36.789228"]]
+  ↳ db/seeds.rb:107
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:107
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:107
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 60], ["category_id", 26], ["created_at", "2018-07-10 22:00:36.794823"], ["updated_at", "2018-07-10 22:00:36.794823"]]
+  ↳ db/seeds.rb:107
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:107
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:107
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 61], ["category_id", 26], ["created_at", "2018-07-10 22:00:36.801367"], ["updated_at", "2018-07-10 22:00:36.801367"]]
+  ↳ db/seeds.rb:107
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:107
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:107
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 62], ["category_id", 26], ["created_at", "2018-07-10 22:00:36.804587"], ["updated_at", "2018-07-10 22:00:36.804587"]]
+  ↳ db/seeds.rb:107
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:107
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:108
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 59], ["category_id", 27], ["created_at", "2018-07-10 22:00:36.807762"], ["updated_at", "2018-07-10 22:00:36.807762"]]
+  ↳ db/seeds.rb:108
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:108
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:108
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 60], ["category_id", 27], ["created_at", "2018-07-10 22:00:36.810280"], ["updated_at", "2018-07-10 22:00:36.810280"]]
+  ↳ db/seeds.rb:108
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:108
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:108
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 61], ["category_id", 27], ["created_at", "2018-07-10 22:00:36.813255"], ["updated_at", "2018-07-10 22:00:36.813255"]]
+  ↳ db/seeds.rb:108
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:108
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:108
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 62], ["category_id", 27], ["created_at", "2018-07-10 22:00:36.815862"], ["updated_at", "2018-07-10 22:00:36.815862"]]
+  ↳ db/seeds.rb:108
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:108
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mPairing Create (0.4ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 59], ["category_id", 28], ["created_at", "2018-07-10 22:00:36.823613"], ["updated_at", "2018-07-10 22:00:36.823613"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mPairing Create (0.2ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 60], ["category_id", 28], ["created_at", "2018-07-10 22:00:36.827853"], ["updated_at", "2018-07-10 22:00:36.827853"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mPairing Create (0.2ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 61], ["category_id", 28], ["created_at", "2018-07-10 22:00:36.830013"], ["updated_at", "2018-07-10 22:00:36.830013"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mPairing Create (0.3ms)[0m  [1m[32mINSERT INTO "pairings" ("wine_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["wine_id", 62], ["category_id", 28], ["created_at", "2018-07-10 22:00:36.832606"], ["updated_at", "2018-07-10 22:00:36.832606"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+Started GET "/pairings" for 127.0.0.1 at 2018-07-10 18:00:45 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/eeeeoo/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PairingsController#index as HTML
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 373ms (Views: 364.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pairings?utf8=%E2%9C%93&group=red&pairing%5Bcategory_id%5D=19" for 127.0.0.1 at 2018-07-10 18:00:50 -0400
+Processing by PairingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "group"=>"red", "pairing"=>{"category_id"=>"19"}}
+  [1m[36mPairing Load (0.5ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  ↳ app/controllers/pairings_controller.rb:4
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mCACHE Wine Load (0.0ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mCACHE Wine Load (0.0ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 66ms (Views: 20.7ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/pairings?utf8=%E2%9C%93&group=white&pairing%5Bcategory_id%5D=16" for 127.0.0.1 at 2018-07-10 18:00:54 -0400
+Processing by PairingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "group"=>"white", "pairing"=>{"category_id"=>"16"}}
+  [1m[36mPairing Load (0.6ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  ↳ app/controllers/pairings_controller.rb:4
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 60], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 62], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 62ms (Views: 49.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/pairings?utf8=%E2%9C%93&group=red&pairing%5Bcategory_id%5D=19" for 127.0.0.1 at 2018-07-10 18:00:59 -0400
+Processing by PairingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "group"=>"red", "pairing"=>{"category_id"=>"19"}}
+  [1m[36mPairing Load (0.7ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  ↳ app/controllers/pairings_controller.rb:4
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mCACHE Wine Load (0.0ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mCACHE Wine Load (0.0ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 46ms (Views: 32.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/pairings?utf8=%E2%9C%93&group=white&pairing%5Bcategory_id%5D=23" for 127.0.0.1 at 2018-07-10 18:01:38 -0400
+Processing by PairingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "group"=>"white", "pairing"=>{"category_id"=>"23"}}
+  [1m[36mPairing Load (0.5ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  ↳ app/controllers/pairings_controller.rb:4
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.3ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.3ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 48ms (Views: 34.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/pairings?utf8=%E2%9C%93&group=white&pairing%5Bcategory_id%5D=19" for 127.0.0.1 at 2018-07-10 18:02:53 -0400
+Processing by PairingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "group"=>"white", "pairing"=>{"category_id"=>"19"}}
+  [1m[36mPairing Load (0.8ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  ↳ app/controllers/pairings_controller.rb:4
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mCACHE Wine Load (0.0ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mCACHE Wine Load (0.0ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 59ms (Views: 42.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/pairings?utf8=%E2%9C%93&group=white&pairing%5Bcategory_id%5D=19" for 127.0.0.1 at 2018-07-10 18:02:57 -0400
+Processing by PairingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "group"=>"white", "pairing"=>{"category_id"=>"19"}}
+  [1m[36mPairing Load (0.8ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  ↳ app/controllers/pairings_controller.rb:4
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mCACHE Wine Load (0.0ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mCACHE Wine Load (0.0ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 51ms (Views: 36.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/pairings?utf8=%E2%9C%93&group=red&pairing%5Bcategory_id%5D=19" for 127.0.0.1 at 2018-07-10 18:02:58 -0400
+Processing by PairingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "group"=>"red", "pairing"=>{"category_id"=>"19"}}
+  [1m[36mPairing Load (0.4ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  ↳ app/controllers/pairings_controller.rb:4
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.3ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mCACHE Wine Load (0.0ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mCACHE Wine Load (0.0ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 41ms (Views: 26.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/pairings?utf8=%E2%9C%93&group=red&pairing%5Bcategory_id%5D=20" for 127.0.0.1 at 2018-07-10 18:04:38 -0400
+Processing by PairingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "group"=>"red", "pairing"=>{"category_id"=>"20"}}
+  [1m[36mPairing Load (0.6ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  ↳ app/controllers/pairings_controller.rb:4
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.5ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.3ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 42ms (Views: 24.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/pairings?utf8=%E2%9C%93&group=red&pairing%5Bcategory_id%5D=28" for 127.0.0.1 at 2018-07-10 18:05:32 -0400
+Processing by PairingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "group"=>"red", "pairing"=>{"category_id"=>"28"}}
+  [1m[36mPairing Load (0.6ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  ↳ app/controllers/pairings_controller.rb:4
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.3ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 60], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 62], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 36ms (Views: 25.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/pairings?utf8=%E2%9C%93&group=red&pairing%5Bcategory_id%5D=22" for 127.0.0.1 at 2018-07-10 18:05:42 -0400
+Processing by PairingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "group"=>"red", "pairing"=>{"category_id"=>"22"}}
+  [1m[36mPairing Load (0.5ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  ↳ app/controllers/pairings_controller.rb:4
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 35ms (Views: 25.1ms | ActiveRecord: 1.4ms)
+
+

@@ -1,12 +1,14 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-
+Category.delete_all
+Wine.delete_all
+Pairing.delete_all
 # categories
 red_meat = Category.create(name:'Red Meat', description: '(Beef, Lamb, Venison, etc.)')
 cured_meat = Category.create(name:'Cured Meat', description: '(Salami, Proscuitto, Bresaola, Bacon, etc.)')
 pork = Category.create(name:'Pork', description: '(Roast, Tenderloin, Pork Chop, etc.)')
 poultry = Category.create(name:'Poultry', description: '(Chicken, Duck, Turkey, etc.)')
-seafood = Category.create(name:'Seafish', description: '(Mollusk, Fish, Lobster, Shellfish, etc.)')
+seafood = Category.create(name:'Seafood', description: '(Mollusk, Fish, Lobster, Shellfish, etc.)')
 soft_cheese = Category.create(name:'Soft Cheese', description: '(Brie, Mascarpone, Crème Fraîche, etc.)')
 hard_cheese = Category.create(name:'Hard Cheese', description: '(Cheddar, Pecorino, Manchego, Asiago, Parmesan, etc.)')
 green_veg = Category.create(name:'Green Vegetables', description: '(Green Bean, Kale, Lettuce, etc.)')
