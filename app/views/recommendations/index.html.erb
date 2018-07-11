@@ -1,0 +1,9 @@
+<h2>Recommendations</h2>
+<ol>
+  <% @recommendations.each do |recommendation| %>
+<li>
+  <%= recommendation.user.name %> recommended <%= recommendation.wine.name %> with <%= recommendation.category.name %> on  <%= recommendation.created_at.strftime("%m/%d/%Y") %>
+</li><br>
+  Reason:<%= recommendation.comment %><br> <br>
+<% end %>
+</ol>

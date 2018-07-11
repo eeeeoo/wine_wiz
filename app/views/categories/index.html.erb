@@ -1,17 +1,7 @@
 <% @categories.each do |category| %>
+  <div>
+    <h4><%= category.name %></h4> <%= category.description %> <br><br>
 
-<div class="row">
-  <div class="col"><%= category.name %></div>
-  <!-- <div class="col"><%= category.name %></div>
-  <div class="col"><%= category.name %></div>
-  <div class="col"><%= category.name %></div>
-  <div class="col"><%= category.name %></div>
-  <div class="col"><%= category.name %></div>
-  <div class="col"><%= category.name %></div> -->
-</div>
+  </div>
 
 <% end %>
-
-<!-- <% @categories.each do |category| %>
-<li><%= category.name %></li>
-<% end %> -->

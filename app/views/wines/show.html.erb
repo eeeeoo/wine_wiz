@@ -1,0 +1,18 @@
+<h1><%= @wine.name %></h1>
+<hr><hr>
+<h2>Info</h2>
+  <p>Color: <%= @wine.color %></p>
+  <p>Body: <%= @wine.body %></p>
+  <p>Tannin: <%= @wine.tannin %></p>
+  <p>Acidity: <%= @wine.acidity %></p>
+  <p>Flavors: <%= @wine.flavors %></p>
+<hr>
+<h2>Reviews</h2>
+<ol>
+<% @wine.reviews.each do |review| %>
+<li><%= review.user.name %>'s review from <%= review.created_at.strftime("%m/%d/%Y") %></li><br>
+  Title: <%= review.title %><br>
+  Content: <%= review.content %><br>
+  Rating: <%= review.rating %><br><br>
+<% end %>
+</ol>

@@ -4,20 +4,20 @@ Category.delete_all
 Wine.delete_all
 Pairing.delete_all
 # categories
-red_meat = Category.create(name:'Red Meat', description: '(Beef, Lamb, Venison, etc.)')
-cured_meat = Category.create(name:'Cured Meat', description: '(Salami, Proscuitto, Bresaola, Bacon, etc.)')
-pork = Category.create(name:'Pork', description: '(Roast, Tenderloin, Pork Chop, etc.)')
-poultry = Category.create(name:'Poultry', description: '(Chicken, Duck, Turkey, etc.)')
-seafood = Category.create(name:'Seafood', description: '(Mollusk, Fish, Lobster, Shellfish, etc.)')
-soft_cheese = Category.create(name:'Soft Cheese', description: '(Brie, Mascarpone, Crème Fraîche, etc.)')
-hard_cheese = Category.create(name:'Hard Cheese', description: '(Cheddar, Pecorino, Manchego, Asiago, Parmesan, etc.)')
-green_veg = Category.create(name:'Green Vegetables', description: '(Green Bean, Kale, Lettuce, etc.)')
-starchy_veg = Category.create(name:'Starchy Vegetables', description: '(Potato, Corn, Carrot, Sweet Potato, etc.)')
-color_veg = Category.create(name:'Red & Orange Vegetables', description: '(Tomato, Peppers, Eggplant, etc.)')
-mushrooms = Category.create(name:'Mushrooms', description: '(Crimini, Portobello, Maitake, etc.)')
-nuts_seeds = Category.create(name:'Nuts & Seeds', description: '(Peanut, Almond, Pecan, Sesame, etc.)')
-carbs = Category.create(name:'White Starches', description: '(Flour, White Rice, Pasta, Bread, Tortillas, etc.)')
-fruits = Category.create(name:'Fruit & Berries', description: '(Strawberry, Orange, Apple, Peach, etc.)')
+red_meat = Category.create(name:'Red Meat', description: 'Beef, Lamb, Venison, etc.')
+cured_meat = Category.create(name:'Cured Meat', description: 'Salami, Proscuitto, Bresaola, Bacon, etc.')
+pork = Category.create(name:'Pork', description: 'Roast, Tenderloin, Pork Chop, etc.')
+poultry = Category.create(name:'Poultry', description: 'Chicken, Duck, Turkey, etc.')
+seafood = Category.create(name:'Seafood', description: 'Mollusk, Fish, Lobster, Shellfish, etc.')
+soft_cheese = Category.create(name:'Soft Cheese', description: 'Brie, Mascarpone, Crème Fraîche, etc.')
+hard_cheese = Category.create(name:'Hard Cheese', description: 'Cheddar, Pecorino, Manchego, Asiago, Parmesan, etc.')
+green_veg = Category.create(name:'Green Vegetables', description: 'Green Bean, Kale, Lettuce, etc.')
+starchy_veg = Category.create(name:'Starchy Vegetables', description: 'Potato, Corn, Carrot, Sweet Potato, etc.')
+color_veg = Category.create(name:'Red & Orange Vegetables', description: 'Tomato, Peppers, Eggplant, etc.')
+mushrooms = Category.create(name:'Mushrooms', description: 'Crimini, Portobello, Maitake, etc.')
+nuts_seeds = Category.create(name:'Nuts & Seeds', description: 'Peanut, Almond, Pecan, Sesame, etc.')
+carbs = Category.create(name:'White Starches', description: 'Flour, White Rice, Pasta, Bread, Tortillas, etc.')
+fruits = Category.create(name:'Fruit & Berries', description: 'Strawberry, Orange, Apple, Peach, etc.')
 
 #bold_reds - red meat, hard cheese,
 syrah = Wine.create(name:'Syrah', group:'red', color:'Bold Red', body:'Full', tannin:'Medium', acidity:'Medium', flavors: 'Blackberry, Blueberry, Boysenberry, Olive, Mint, Chocolate, Vanilla, Tobacco')
@@ -59,7 +59,7 @@ trebbiano = Wine.create(name: 'Trebbiano', group: 'white', color: 'Light White',
 # sparkling - pork, seafood,
 
 prosecco = Wine.create(name: 'Prosecco', group: 'white', color: 'Sparkling White', body: 'Light', tannin: 'Low', acidity: 'High', flavors: 'Green Apple, Honeydew Melon, Pear, Honeysuckle')
-cava = Wine.create(name: 'Cava', group: 'white', color: 'Light White', body: 'Medium', tannin: 'Low', acidity: 'High', flavors: 'Citrus Zest, Apple, Toasted Nuts, Bergamot, Chamomile')
+cava = Wine.create(name: 'Cava', group: 'white', color: 'Sparkling White', body: 'Medium', tannin: 'Low', acidity: 'High', flavors: 'Citrus Zest, Apple, Toasted Nuts, Bergamot, Chamomile')
 
 # sweet whites - cured meat, nuts&seeds, starchy veg, fruit & berries
 
@@ -83,9 +83,18 @@ red_mushrooms = Pairing.create([{wine:merlot, category:mushrooms}, {wine:sangiov
   {wine:grenache, category:mushrooms}, {wine:gamay, category:mushrooms},
   {wine:carignan, category:mushrooms}])
 
+red_seafood = Pairing.create([{wine:pinot_noir, category:seafood}, {wine:grenache, category:seafood}, {wine:gamay, category:seafood}, {wine:carignan, category:seafood}])
 red_cured_meat = Pairing.create([{wine:pinot_noir, category:cured_meat}, {wine:grenache, category:cured_meat}, {wine:gamay, category:cured_meat}, {wine:carignan, category:cured_meat}])
 red_poultry = Pairing.create([{wine:pinot_noir, category:poultry}, {wine:grenache, category:poultry}, {wine:gamay, category:poultry}, {wine:carignan, category:poultry}])
 red_soft_cheese = Pairing.create([{wine:pinot_noir, category:soft_cheese}, {wine:grenache, category:soft_cheese}, {wine:gamay, category:soft_cheese}, {wine:carignan, category:soft_cheese}])
+red_nuts_seeds = Pairing.create([{wine:pinot_noir, category:nuts_seeds}, {wine:grenache, category:nuts_seeds}, {wine:gamay, category:nuts_seeds}, {wine:carignan, category:nuts_seeds}])
+
+red_green_veg = Pairing.create([{wine:merlot, category:green_veg}, {wine:sangiovese, category:green_veg}, {wine:tempranillo, category:green_veg}, {wine:franc, category:green_veg},{wine:zinfandel, category:green_veg}])
+red_color_veg = Pairing.create([{wine:merlot, category:color_veg}, {wine:sangiovese, category:color_veg}, {wine:tempranillo, category:color_veg}, {wine:franc, category:color_veg},{wine:zinfandel, category:color_veg}])
+red_carbs = Pairing.create([{wine:syrah, category:carbs}, {wine:mourvedre, category:carbs}, {wine:touriga, category:carbs}, {wine:carbernet, category:carbs},{wine:malbec, category:carbs},{wine:petite_sirah, category:carbs},{wine:merlot, category:carbs}, {wine:sangiovese, category:carbs},
+  {wine:tempranillo, category:carbs}, {wine:franc, category:carbs},{wine:zinfandel, category:carbs},{wine:pinot_noir, category:carbs}, {wine:grenache, category:carbs}, {wine:gamay, category:carbs}, {wine:carignan, category:carbs}])
+
+red_fruit = Pairing.create([{wine:syrah, category:fruits}, {wine:mourvedre, category:fruits}, {wine:touriga, category:fruits}, {wine:carbernet, category:fruits},{wine:malbec, category:fruits},{wine:petite_sirah, category:fruits}])
 
 # white wines
 white_red_meat = Pairing.create([{wine:moscato, category:red_meat}, {wine:riesling, category:red_meat}, {wine:chenin_blanc, category:red_meat}, {wine:gewurtztraminer, category:red_meat}])
@@ -105,5 +114,8 @@ white_soft_cheese = Pairing.create([{category: soft_cheese, wine: chardonnay}, {
 
 white_color_veg= Pairing.create([{wine:moscato, category:color_veg},{wine:riesling, category:color_veg},{wine:chenin_blanc, category:color_veg},{wine:gewurtztraminer, category:color_veg}])
 white_nuts_seeds = Pairing.create([{wine:moscato, category:nuts_seeds},{wine:riesling, category:nuts_seeds},{wine:chenin_blanc, category:nuts_seeds},{wine:gewurtztraminer, category:nuts_seeds}])
-white_carbs = Pairing.create([{wine:moscato, category:carbs},{wine:riesling, category:carbs},{wine:chenin_blanc, category:carbs},{wine:gewurtztraminer, category:carbs}])
+white_carbs = Pairing.create([{wine:chardonnay, category:carbs},{wine:semillon, category:carbs},{wine:viognier, category:carbs},{wine:marsanne, category:carbs},{wine:roussanne, category:carbs},{category: carbs, wine: sauvignon_blanc}, {category: carbs, wine: pinot_blanc}, {category: carbs, wine: vermentino},
+  {category: carbs, wine: trebbiano}, {category: carbs, wine: pinot_grigio},{category: carbs, wine: prosecco}, {category: carbs, wine: cava},{wine:moscato, category:carbs},{wine:riesling, category:carbs},{wine:chenin_blanc, category:carbs},{wine:gewurtztraminer, category:carbs}])
+
+
 white_fruits = Pairing.create([{wine:moscato, category:fruits},{wine:riesling, category:fruits},{wine:chenin_blanc, category:fruits},{wine:gewurtztraminer, category:fruits}])
