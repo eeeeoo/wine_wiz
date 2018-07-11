@@ -28486,3 +28486,454 @@ Processing by PairingsController#index as HTML
 Completed 200 OK in 35ms (Views: 25.1ms | ActiveRecord: 1.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-11 08:42:13 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/bradnewman/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/bradnewman/.rvm/gems/ruby-2.3.3/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/bradnewman/.rvm/gems/ruby-2.3.3/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (8.5ms)
+Completed 200 OK in 173ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pairings" for 127.0.0.1 at 2018-07-11 08:42:22 -0400
+Processing by PairingsController#index as HTML
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (215.5ms)
+Completed 200 OK in 13465ms (Views: 13460.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/pairings?utf8=%E2%9C%93&group=white&pairing%5Bcategory_id%5D=20" for 127.0.0.1 at 2018-07-11 08:42:55 -0400
+Processing by PairingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "group"=>"white", "pairing"=>{"category_id"=>"20"}}
+  [1m[36mPairing Load (1.1ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  ↳ app/controllers/pairings_controller.rb:4
+  [1m[36mWine Load (38.8ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 334ms (Views: 102.7ms | ActiveRecord: 44.0ms)
+
+
+Started GET "/pairings?utf8=%E2%9C%93&group=white&pairing%5Bcategory_id%5D=20" for 127.0.0.1 at 2018-07-11 09:16:33 -0400
+Processing by PairingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "group"=>"white", "pairing"=>{"category_id"=>"20"}}
+  [1m[36mPairing Load (2.9ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  ↳ app/controllers/pairings_controller.rb:4
+  [1m[36mWine Load (0.4ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.3ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCategory Load (10.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (69.1ms)
+Completed 200 OK in 427ms (Views: 361.0ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/pairings?utf8=%E2%9C%93&group=white&pairing%5Bcategory_id%5D=20" for 127.0.0.1 at 2018-07-11 09:17:20 -0400
+Processing by PairingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "group"=>"white", "pairing"=>{"category_id"=>"20"}}
+  [1m[36mPairing Load (0.7ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  ↳ app/controllers/pairings_controller.rb:4
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.3ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 119ms (Views: 100.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/pairings?utf8=%E2%9C%93&group=white&pairing%5Bcategory_id%5D=20" for 127.0.0.1 at 2018-07-11 09:17:30 -0400
+Processing by PairingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "group"=>"white", "pairing"=>{"category_id"=>"20"}}
+  [1m[36mPairing Load (1.9ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  ↳ app/controllers/pairings_controller.rb:4
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 132ms (Views: 105.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/pairings" for 127.0.0.1 at 2018-07-11 09:17:36 -0400
+Processing by PairingsController#index as HTML
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 90ms (Views: 85.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pairings?utf8=%E2%9C%93&group=red&pairing%5Bcategory_id%5D=15" for 127.0.0.1 at 2018-07-11 09:18:14 -0400
+Processing by PairingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "group"=>"red", "pairing"=>{"category_id"=>"15"}}
+  [1m[36mPairing Load (1.1ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  ↳ app/controllers/pairings_controller.rb:4
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mCACHE Wine Load (0.0ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 60], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.7ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.7ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 62], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 134ms (Views: 100.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/pairings" for 127.0.0.1 at 2018-07-11 09:21:40 -0400
+Processing by PairingsController#index as HTML
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 1382ms (Views: 1377.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pairings" for 127.0.0.1 at 2018-07-11 09:22:34 -0400
+Processing by PairingsController#index as HTML
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 59ms (Views: 52.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pairings?utf8=%E2%9C%93&group=white&pairing%5Bcategory_id%5D=" for 127.0.0.1 at 2018-07-11 09:22:47 -0400
+Processing by PairingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "group"=>"white", "pairing"=>{"category_id"=>""}}
+  [1m[36mPairing Load (0.8ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  ↳ app/controllers/pairings_controller.rb:4
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 69ms (Views: 55.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pairings?utf8=%E2%9C%93&group=white&pairing%5Bcategory_id%5D=15" for 127.0.0.1 at 2018-07-11 09:23:11 -0400
+Processing by PairingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "group"=>"white", "pairing"=>{"category_id"=>"15"}}
+  [1m[36mPairing Load (1.0ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  ↳ app/controllers/pairings_controller.rb:4
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mCACHE Wine Load (0.0ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 60], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.3ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 62], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 88ms (Views: 59.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/pairings" for 127.0.0.1 at 2018-07-11 09:23:29 -0400
+Processing by PairingsController#index as HTML
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 60ms (Views: 54.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pairings?utf8=%E2%9C%93&group=white&pairing%5Bcategory_id%5D=15" for 127.0.0.1 at 2018-07-11 09:23:32 -0400
+Processing by PairingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "group"=>"white", "pairing"=>{"category_id"=>"15"}}
+  [1m[36mPairing Load (0.6ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  ↳ app/controllers/pairings_controller.rb:4
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.2ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mCACHE Wine Load (0.0ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 60], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 62], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 61ms (Views: 43.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/pairings?utf8=%E2%9C%93&group=white&pairing%5Bcategory_id%5D=" for 127.0.0.1 at 2018-07-11 09:23:47 -0400
+Processing by PairingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "group"=>"white", "pairing"=>{"category_id"=>""}}
+  [1m[36mPairing Load (0.6ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  ↳ app/controllers/pairings_controller.rb:4
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 54ms (Views: 44.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pairings?utf8=%E2%9C%93&group=red&pairing%5Bcategory_id%5D=21" for 127.0.0.1 at 2018-07-11 09:24:03 -0400
+Processing by PairingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "group"=>"red", "pairing"=>{"category_id"=>"21"}}
+  [1m[36mPairing Load (1.1ms)[0m  [1m[34mSELECT "pairings".* FROM "pairings"[0m
+  ↳ app/controllers/pairings_controller.rb:4
+  [1m[36mWine Load (0.3ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.1ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  [1m[36mWine Load (0.4ms)[0m  [1m[34mSELECT  "wines".* FROM "wines" WHERE "wines"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+  ↳ app/controllers/pairings_controller.rb:14
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/pairings/index.html.erb:2
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:12
+  Rendered pairings/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 65ms (Views: 46.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/pairings" for 127.0.0.1 at 2018-07-11 09:25:59 -0400
+Processing by PairingsController#index as HTML
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:14
+  Rendered pairings/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 327ms (Views: 323.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pairings" for 127.0.0.1 at 2018-07-11 09:26:16 -0400
+Processing by PairingsController#index as HTML
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:14
+  Rendered pairings/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 51ms (Views: 45.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pairings" for 127.0.0.1 at 2018-07-11 09:27:09 -0400
+Processing by PairingsController#index as HTML
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:14
+  Rendered pairings/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 54ms (Views: 49.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pairings" for 127.0.0.1 at 2018-07-11 09:27:23 -0400
+Processing by PairingsController#index as HTML
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:14
+  Rendered pairings/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 56ms (Views: 51.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pairings" for 127.0.0.1 at 2018-07-11 09:27:32 -0400
+Processing by PairingsController#index as HTML
+  Rendering pairings/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pairings/index.html.erb:14
+  Rendered pairings/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 44ms (Views: 39.6ms | ActiveRecord: 0.2ms)
+
+

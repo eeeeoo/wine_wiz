@@ -5,11 +5,14 @@
 <% @pairing = pairing %>
 <% end %> -->
 <%= form_tag(pairings_path, :method => 'get', id: 'search-from') do %>
-<%= radio_button_tag(:group, 'red') %>
+<label>Choose a Wine!</label><br>
+<%= radio_button_tag(:group, 'red', checked: true) %>
 <%= label_tag(:group_red, "Red Wine") %><br>
 <%= radio_button_tag(:group, 'white') %>
 <%= label_tag(:group_white, "White Wine") %><br>
-<%= collection_select(:pairing, :category_id, Category.all, :id, :name, {:prompt => 'Select'})%>
+<label>Choose A Food Category: </label><br>
+<%= collection_select(:pairing, :category_id, Category.all, :id, :name)%><br>
+<br>
 <%= submit_tag "Pair", :name => nil %>
 <% end %>
 
