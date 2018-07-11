@@ -1,5 +1,25 @@
 <h1>Editing User</h1>
+<%= form_for(@user) do |form| %>
 
-<%= render 'form', user: @user %>
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
 
-<%= link_to 'Show', @user %> |
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password %>
+    <%= form.password_field :password %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+
+<%= link_to 'My Profile', @user %> 

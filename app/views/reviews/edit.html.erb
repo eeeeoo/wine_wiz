@@ -1,0 +1,19 @@
+<%= form_for [@wine, @review] do |f| %>
+  <h3>New Review for <%= @wine.name %></h3>
+  <%= f.label :title  %>
+  <%= f.text_field :title %><br>
+  <%= f.label :content %><br>
+  <%= f.text_area :content %><br>
+  <label>Rate this Wine!</label><br>
+  <%= radio_button_tag(:rating, 5 , checked: true) %>
+  <%= label_tag(:rating_5, "5") %>
+  <%= radio_button_tag(:rating, 4) %>
+  <%= label_tag(:rating_4, "4") %>
+  <%= radio_button_tag(:rating, 3) %>
+  <%= label_tag(:rating_3, "3") %>
+  <%= radio_button_tag(:rating, 2) %>
+  <%= label_tag(:rating_2, "2") %>
+  <%= radio_button_tag(:rating, 1) %>
+  <%= label_tag(:rating_1, "1") %><br>
+  <%= f.submit %>
+<% end %>
