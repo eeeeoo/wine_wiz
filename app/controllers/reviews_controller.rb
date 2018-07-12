@@ -30,7 +30,8 @@ class ReviewsController < ApplicationController
 
   def update
     @wine = Wine.find(params[:wine_id])
-    if @review.update(review_params(:title, :content, :rating))
+    @review.rating = params[:rating].to_i
+    if @review.update(review_params(:title, :content))
       redirect_to @logged_in_user
     else
       render :edit

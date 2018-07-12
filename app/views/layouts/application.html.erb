@@ -6,16 +6,14 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', "https://fonts.googleapis.com/css?family=Lato",  media: 'all', 'data-turbolinks-track': true %>
-    <%= javascript_include_tag "https://unpkg.com/ionicons@4.2.4/dist/ionicons.js", 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag "application", "https://unpkg.com/ionicons@4.2.4/dist/ionicons.js", 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Wine Wizard</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <%= image_tag("wine_wiz_logo.png", style:'height:5% ;width:5%;' ,alt:"wine_wiz_logo") %>
+        <span style="font-size:1.25rem;">Wine Wizard</span>
+      <div class="container" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
               <a class="nav-link" href="/pairings">Pair Search<span class="sr-only">(current)</span></a>
@@ -30,14 +28,22 @@
             <li class="nav-item">
               <a class="nav-link" href="/recommendations">Recommendations</a>
             </li>
+        <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Recommendations
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/recommendations/new">Add Recommendation</a>
+          <a class="dropdown-item" href="/recommendations">Browse Recommendations</a>
+        </div>
+      </li> -->
           </ul>
         <div class="navbar-text my-2 my-lg-0">
           <% if @logged_in_user %>
-          <span><%= @logged_in_user.name %></span>
-          <a href="/users/<%=@logged_in_user.id%>"><ion-icon name="person"></ion-icon></a>
+            <span><%= @logged_in_user.name %></span>
+            <a href="/users/<%=@logged_in_user.id%>"><ion-icon name="person"></ion-icon></a>
             <span>| Logout</span>
             <a href="/logout" data-method="delete"><ion-icon name="log-out"></ion-icon></a>
-
           <% else %>
             <span>Register</span>
             <a href="/users/new"><ion-icon name="person-add"></ion-icon></a>

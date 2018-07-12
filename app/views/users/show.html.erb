@@ -5,31 +5,34 @@
   <%= @user.email %>
 </p>
 
-<%= link_to 'Edit User', edit_user_path(@user) %>
-
+<span>Edit Profile</span>
+<a href="/users/<%=@user.id%>/edit"><ion-icon name="create"></ion-icon></a>
+<br><hr><br>
 <h2>Your Reviews</h2>
 <ul>
 <% @user.reviews.each do |review| %>
   <h5>Review of <%= review.wine.name %> from <%= review.created_at.localtime.strftime("%m/%d/%Y") %></h5>
   Title: <%= review.title %><br>
   Content: <%= review.content %><br>
-  Rating: <%= review.rating %><br>
-  <%= button_to "Edit Review", edit_wine_review_path(review.wine.id, review.id) , method: 'get' %>
-  <%= button_to "Delete Review", wine_review_path(review.wine.id, review.id) , method: 'delete' %>
+  Rating: <%=review.rating%><br>
+  <span>Edit</span>
+  <a href="/wines/<%=review.wine.id%>/reviews/<%=review.id%>/edit"><ion-icon name="color-wand"></ion-icon></a>
+  <span>| Delete</span>
+  <a href="/wines/<%=review.wine.id%>/reviews/<%=review.id%>" data-method="delete"><ion-icon name="trash"></ion-icon></a>
   <br>
 <% end %>
 </ul>
-
+<br>
 <h2>Your Recommendations</h2>
 <ul>
 <% @user.recommendations.each do |recommendation| %>
+  <br>
   <h5>Recommended <%= recommendation.wine.name %> with <%= recommendation.category.name %> on <%= recommendation.created_at.localtime.strftime("%m/%d/%Y") %></h5>
   Comment: <%= recommendation.comment %><br>
-  <span>Delete Recommendation</span>
-  <a href="/recommendations/<%=recommendation%>" data-method="delete"><ion-icon name="trash"></ion-icon></a>
-
-  <%= button_to "Edit Recommendation", edit_recommendation_path(recommendation) , method: 'get' %>
-  <%= button_to "Delete Review", recommendation_path(recommendation) , method: 'delete' %>
+  <span>Edit</span>
+  <a href="/recommendations/<%=recommendation.id%>/edit"><ion-icon name="color-wand"></ion-icon></a>
+  <span>| Delete</span>
+  <a href="/recommendations/<%=recommendation.id%>" data-method="delete"><ion-icon name="trash"></ion-icon></a>
   <br>
 <% end %>
 </ul>

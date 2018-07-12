@@ -8,6 +8,9 @@
   <p>Flavors: <%= @wine.flavors %></p>
 <hr>
 <h2>Reviews</h2>
+<span>Review this wine</span>
+<a href="/wines/<%=@wine.id%>/reviews/new"><ion-icon name="wine"></ion-icon></a>
+
 <ol>
 <% @wine.reviews.each do |review| %>
 <li><%= review.user.name %>'s review from <%= review.created_at.localtime.strftime("%m/%d/%Y") %></li><br>
@@ -16,5 +19,3 @@
   Rating: <%= review.rating %><br><br>
 <% end %>
 </ol>
-<span>Review this wine</span>
-<a href="/recommendations/new"><ion-icon name="wine"></ion-icon></a>
