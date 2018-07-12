@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :pairings
   resources :categories
   resources :wines do
-    resources :reviews, only: [:new, :create, :destroy, :edit, :show, :update]
+    resources :reviews
   end
   resources :users, only: %i[new create show edit update]
   resources :sessions, only: %i[new create]

@@ -2,7 +2,7 @@
 <ol>
   <% @recommendations.each do |recommendation| %>
 <li>
-  <%= recommendation.user.name %> recommended <%= recommendation.wine.name %> with <%= recommendation.category.name %> on  <%= recommendation.created_at.strftime("%m/%d/%Y") %>
+  <%= recommendation.user.name %> recommended <%= recommendation.wine.name %> with <%= recommendation.category.name %> on  <%= recommendation.created_at.localtime.strftime("%m/%d/%Y") %>
 </li><br>
   Reason:<%= recommendation.comment %><br> <br>
 <% end %>

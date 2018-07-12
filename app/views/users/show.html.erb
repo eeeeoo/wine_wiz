@@ -10,7 +10,7 @@
 <h2>Your Reviews</h2>
 <ul>
 <% @user.reviews.each do |review| %>
-  <h5>Review of <%= review.wine.name %> from <%= review.created_at.strftime("%m/%d/%Y") %></h5>
+  <h5>Review of <%= review.wine.name %> from <%= review.created_at.localtime.strftime("%m/%d/%Y") %></h5>
   Title: <%= review.title %><br>
   Content: <%= review.content %><br>
   Rating: <%= review.rating %><br>
@@ -23,8 +23,11 @@
 <h2>Your Recommendations</h2>
 <ul>
 <% @user.recommendations.each do |recommendation| %>
-  <h5>Recommended <%= recommendation.wine.name %> with <%= recommendation.category.name %> on <%= recommendation.created_at.strftime("%m/%d/%Y") %></h5>
+  <h5>Recommended <%= recommendation.wine.name %> with <%= recommendation.category.name %> on <%= recommendation.created_at.localtime.strftime("%m/%d/%Y") %></h5>
   Comment: <%= recommendation.comment %><br>
+  <span>Delete Recommendation</span>
+  <a href="/recommendations/<%=recommendation%>" data-method="delete"><ion-icon name="trash"></ion-icon></a>
+
   <%= button_to "Edit Recommendation", edit_recommendation_path(recommendation) , method: 'get' %>
   <%= button_to "Delete Review", recommendation_path(recommendation) , method: 'delete' %>
   <br>

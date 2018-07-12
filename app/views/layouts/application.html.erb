@@ -6,7 +6,7 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', "https://fonts.googleapis.com/css?family=Lato",  media: 'all', 'data-turbolinks-track': true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag "https://unpkg.com/ionicons@4.2.4/dist/ionicons.js", 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
@@ -18,32 +18,31 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Pair Search <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Wines
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Reviews</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+              <a class="nav-link" href="/pairings">Pair Search<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Food Categories</a>
+              <a class="nav-link" href="/wines">Wine List</a>
+            </li>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Recommendations</a>
+              <a class="nav-link" href="/categories">Food Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/recommendations">Recommendations</a>
             </li>
           </ul>
         <div class="navbar-text my-2 my-lg-0">
           <% if @logged_in_user %>
-            My Profile: <%= @logged_in_user.name %><br>
-            <%= link_to "Logout", logout_path, method: 'delete' %>
+          <span><%= @logged_in_user.name %></span>
+          <a href="/users/<%=@logged_in_user.id%>"><ion-icon name="person"></ion-icon></a>
+            <span>| Logout</span>
+            <a href="/logout" data-method="delete"><ion-icon name="log-out"></ion-icon></a>
+
           <% else %>
-            <%= link_to "Register", new_user_path %>
-            <%= link_to "Login", new_session_path %>
+            <span>Register</span>
+            <a href="/users/new"><ion-icon name="person-add"></ion-icon></a>
+            <span>| Login</span>
+            <a href="/sessions/new"><ion-icon name="log-in"></ion-icon></a>
           <% end %>
         </div>
       </div>
