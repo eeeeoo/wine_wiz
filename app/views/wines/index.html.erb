@@ -6,7 +6,6 @@
 <% sparkling_white_wines = [] %>
 <% sweet_white_wines = [] %>
 
-
 <% @wines.each do |wine| %>
   <% if wine.color == 'Bold Red' %>
     <% bold_red_wines << wine %>
@@ -31,31 +30,40 @@
   <% end %>
 <% end %>
 
-<h4>Bold Red</h4>
-<% bold_red_wines.each do |bold_red| %>
-  <li><%= link_to bold_red.name, bold_red %></li>
-<% end %> <br>
-<h4>Medium Red</h4>
-<% med_red_wines.each do |med_red| %>
-  <li><%= link_to med_red.name, med_red %></li>
-<% end %> <br>
-<h4>Light Red</h4>
-<% light_red_wines.each do |light_red| %>
-  <li><%= link_to light_red.name, light_red %></li>
-<% end %> <br>
-<h4>Rich White</h4>
-<% rich_white_wines.each do |rich_white| %>
-  <li><%= link_to rich_white.name, rich_white %></li>
-<% end %> <br>
-<h4>Light White</h4>
-<% light_white_wines.each do |light_white| %>
-  <li><%= link_to light_white.name, light_white %></li>
-<% end %> <br>
-<h4>Sparkling White</h4>
-<% sparkling_white_wines.each do |sparkling_white| %>
-  <li><%= link_to sparkling_white.name, sparkling_white %></li>
-<% end %> <br>
-<h4>Sweet White</h4>
-<% sweet_white_wines.each do |sweet_white| %>
-  <li><%= link_to sweet_white.name, sweet_white %></li>
-<% end %> <br>
+<div class="container">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-3">
+      <h4>Bold Red</h4>
+      <% bold_red_wines.each do |bold_red| %>
+        <li><%= link_to bold_red.name, bold_red %></li>
+      <% end %> <br>
+      <h4>Medium Red</h4>
+      <% med_red_wines.each do |med_red| %>
+        <li><%= link_to med_red.name, med_red %></li>
+      <% end %> <br>
+      <h4>Light Red</h4>
+      <% light_red_wines.each do |light_red| %>
+        <li><%= link_to light_red.name, light_red %></li>
+      <% end %> <br>
+    </div>
+    <div class="col-3">
+      <h4>Rich White</h4>
+      <% rich_white_wines.each do |rich_white| %>
+        <li><%= link_to rich_white.name, rich_white %></li>
+      <% end %> <br>
+      <h4>Light White</h4>
+      <% light_white_wines.each do |light_white| %>
+        <li><%= link_to light_white.name, light_white %></li>
+      <% end %> <br>
+      <h4>Sparkling White</h4>
+      <% sparkling_white_wines.each do |sparkling_white| %>
+        <li><%= link_to sparkling_white.name, sparkling_white %></li>
+      <% end %> <br>
+      <h4>Sweet White</h4>
+      <% sweet_white_wines.each do |sweet_white| %>
+        <li><%= link_to sweet_white.name, sweet_white %></li>
+      <% end %> <br>
+    </div>
+  </div>
+</div>

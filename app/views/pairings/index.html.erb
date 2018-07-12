@@ -4,6 +4,9 @@
 <!-- <% @pairings.each do |pairing| %>
 <% @pairing = pairing %>
 <% end %> -->
+<div class="text-center">
+
+
 <%= form_tag(pairings_path, :method => 'get', id: 'search-from') do %>
   <label>Choose a Wine!</label><br>
   <%= radio_button_tag(:group, 'red', checked: true) %>
@@ -19,3 +22,4 @@
 <% @pairings.each do |pairing| %>
   <li><%= link_to pairing.wine.name, pairing.wine %></li><br>
 <% end %>
+</div>
