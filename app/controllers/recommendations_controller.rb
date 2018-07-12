@@ -1,5 +1,5 @@
 class RecommendationsController < ApplicationController
-  before_action :fetch_recommendation, only: %i[show, edit, update, destroy]
+  before_action :fetch_recommendation, only: %i[show edit update destroy]
   def index
     @recommendations = Recommendation.all
   end
@@ -14,17 +14,18 @@ class RecommendationsController < ApplicationController
     @recommendation = Recommendation.new(recommendation_params(:comment, :wine_id, :category_id))
     @recommendation.user_id = @logged_in_user.id
     if @recommendation.save
-      redirect_to @recommendation
+      redirect_to recommendations_path
     else
       render :new
     end
   end
 
-  def edit; end
+  def edit
+  end
 
   def update
     if @recommendation.update(recommendation_params(:comment))
-      redirect_to @recommendation
+      redirect_to @logged_in_user
     else
       render :edit
     end
@@ -32,7 +33,7 @@ class RecommendationsController < ApplicationController
 
   def destroy
     @recommendation.destroy
-    redirect_to recommendations_path
+    redirect_to @logged_in_user
   end
 
   private

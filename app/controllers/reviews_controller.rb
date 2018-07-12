@@ -1,5 +1,5 @@
 class ReviewsController < ApplicationController
-  before_action :fetch_review, only: %i[show, edit, update, destroy]
+  before_action :fetch_review, only: %i[show edit update destroy]
   def index
     @reviews = Review.all
   end
@@ -21,14 +21,17 @@ class ReviewsController < ApplicationController
       redirect_to @wine
     else
       render :new
-    end 
+    end
   end
 
-  def edit; end
+  def edit
+    @wine = Wine.find(params[:wine_id])
+  end
 
   def update
+    @wine = Wine.find(params[:wine_id])
     if @review.update(review_params(:title, :content, :rating))
-      redirect_to @review
+      redirect_to @logged_in_user
     else
       render :edit
     end
@@ -36,7 +39,7 @@ class ReviewsController < ApplicationController
 
   def destroy
     @review.destroy
-    redirect_to reviews_path
+    redirect_to @logged_in_user
   end
 
   private
