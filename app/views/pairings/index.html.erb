@@ -8,18 +8,29 @@
 
 
 <%= form_tag(pairings_path, :method => 'get', id: 'search-from') do %>
-  <label>Choose a Wine!</label><br>
+  <label>Choose a Wine:</label><br><br><br>
+  <div class="container">
+    <div class="row">
+<div class="col">
+  <%= image_tag("wines/red_wine.svg" , style:'height:90%;width:8%;' ,alt:"red_wine") %>
+<br>
   <%= radio_button_tag(:group, 'red', checked: true) %>
-  <%= label_tag(:group_red, "Red Wine") %><br>
+  <%= label_tag(:group_red, "Red Wine") %>
+</div>
+<div class="col">
+  <%= image_tag("wines/white_wine.svg" , style:'height:90% ;width:8%;' ,alt:"white_wine") %><br>
   <%= radio_button_tag(:group, 'white') %>
-  <%= label_tag(:group_white, "White Wine") %><br>
-  <label>Choose A Food Category: </label><br>
-  <%= collection_select(:pairing, :category_id, Category.all, :id, :name)%><br>
-  <br>
-  <%= submit_tag "Pair", :name => nil %>
+  <%= label_tag(:group_white, "White Wine") %>
+</div>
+</div><br><br><br><br>
+</div>
+  <label>Choose A Food Category: </label><br><br>
+  <%= collection_select(:pairing, :category_id, Category.all, :id, :name)%><br><br><br>
+  <%= submit_tag "Pair", :name => nil, :class => "btn btn-secondary btn-lg" %>
+
 <% end %><br>
 
 <% @pairings.each do |pairing| %>
-  <li><%= link_to pairing.wine.name, pairing.wine %></li><br>
+  <%= link_to pairing.wine.name, pairing.wine %><br>
 <% end %>
 </div>

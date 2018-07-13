@@ -1,11 +1,22 @@
 <p id="notice"><%= notice %></p>
+<div>
+  <div class="row">
+    <div class="col">
+    </div>
 
+    <div class="col text-right" style="padding-right:50px;">
 <p>
   <strong>Username:</strong>
   <%= @user.email %>
 </p>
-<span>Edit Profile</span>
-<a href="/users/<%=@user.id%>/edit"><ion-icon name="create"></ion-icon></a>
+
+<a href="/users/<%=@user.id%>/edit" class="btn btn-secondary btn-lg">Edit Profile <ion-icon name="create"></ion-icon></a>
+</div>
+
+</div>
+</div>
+
+
 <br><hr><br>
 <div class="container">
 <div class="row">

@@ -1,21 +1,40 @@
-<h1><%= @wine.name %></h1>
-<hr><hr>
-<h2>Info</h2>
-  <p>Color: <%= @wine.color %></p>
-  <p>Body: <%= @wine.body %></p>
-  <p>Tannin: <%= @wine.tannin %></p>
-  <p>Acidity: <%= @wine.acidity %></p>
-  <p>Flavors: <%= @wine.flavors %></p>
-<hr>
-<h2>Reviews</h2>
-<span>Review this wine</span>
-<a href="/wines/<%=@wine.id%>/reviews/new"><ion-icon name="wine"></ion-icon></a>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+      <h1><%= @wine.name %></h1>
+      <hr><hr>
+      <h2>Info</h2>
+        <p>Color: <%= @wine.color %></p>
+        <p>Body: <%= @wine.body %></p>
+        <p>Tannin: <%= @wine.tannin %></p>
+        <p>Acidity: <%= @wine.acidity %></p>
+        <p>Flavors: <%= @wine.flavors %></p>
+      <hr>
+    </div>
 
-<ol>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h2>Reviews</h2><br>
+    </div>
+    <div class="col-sm">
+      <a href="/wines/<%=@wine.id%>/reviews/new" class="btn btn-secondary btn-lg" role="button" aria-pressed="true">Review This Wine <ion-icon name="wine"></ion-icon></a>
+    </div>
+  </div>
+
 <% @wine.reviews.each do |review| %>
-<li><%= review.user.name %>'s review from <%= review.created_at.localtime.strftime("%m/%d/%Y") %></li><br>
+<div class="card" style="width: 20rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= review.user.name %>'s Review</h5>
+    <h6 class="card-subtitle mb-2 text-muted"><%= review.created_at.localtime.strftime("%m/%d/%Y") %></h6>
+    <p class="card-text">
   Title: <%= review.title %><br>
   Content: <%= review.content %><br>
-  Rating: <%= review.rating %><br><br>
-<% end %>
-</ol>
+  Rating: <%=review.rating%><br>
+  </p>
+  <span>Edit</span>
+  <a href="/wines/<%=review.wine.id%>/reviews/<%=review.id%>/edit"><ion-icon name="color-wand"></ion-icon></a>
+  <span>| Delete</span>
+  <a href="/wines/<%=review.wine.id%>/reviews/<%=review.id%>" data-method="delete"><ion-icon name="trash"></ion-icon></a>
+</div>
+</div><br><% end %>
