@@ -21,6 +21,7 @@ class RecommendationsController < ApplicationController
   end
 
   def edit
+    verify_user
   end
 
   def update
@@ -43,5 +44,11 @@ class RecommendationsController < ApplicationController
 
   def fetch_recommendation
     @recommendation = Recommendation.find(params[:id])
+  end
+
+  def verify_user
+    if @recommendation.user_id != @logged_in_user.id
+      redirect_to new_session_path
+    end
   end
 end

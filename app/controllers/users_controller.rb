@@ -7,6 +7,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    verify_user
   end
 
   def create
@@ -36,5 +37,10 @@ class UsersController < ApplicationController
     params.require(:user).permit(:name,:email,:password)
   end
 
+  def verify_user
+    if @user != @logged_in_user
+      redirect_to new_session_path
+    end
+  end
 
 end

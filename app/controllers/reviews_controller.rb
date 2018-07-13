@@ -25,6 +25,7 @@ class ReviewsController < ApplicationController
   end
 
   def edit
+    verify_user
     @wine = Wine.find(params[:wine_id])
   end
 
@@ -51,4 +52,11 @@ class ReviewsController < ApplicationController
   def fetch_review
     @review = Review.find(params[:id])
   end
+
+  def verify_user
+    if @review.user_id != @logged_in_user.id
+      redirect_to new_session_path
+    end
+  end
+
 end
