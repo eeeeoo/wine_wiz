@@ -4,35 +4,48 @@
   <strong>Username:</strong>
   <%= @user.email %>
 </p>
-
 <span>Edit Profile</span>
 <a href="/users/<%=@user.id%>/edit"><ion-icon name="create"></ion-icon></a>
 <br><hr><br>
-<h2>Your Reviews</h2>
-<ul>
-<% @user.reviews.each do |review| %>
-  <h5>Review of <%= review.wine.name %> from <%= review.created_at.localtime.strftime("%m/%d/%Y") %></h5>
-  Title: <%= review.title %><br>
-  Content: <%= review.content %><br>
-  Rating: <%=review.rating%><br>
-  <span>Edit</span>
-  <a href="/wines/<%=review.wine.id%>/reviews/<%=review.id%>/edit"><ion-icon name="color-wand"></ion-icon></a>
-  <span>| Delete</span>
-  <a href="/wines/<%=review.wine.id%>/reviews/<%=review.id%>" data-method="delete"><ion-icon name="trash"></ion-icon></a>
-  <br>
-<% end %>
-</ul>
-<br>
-<h2>Your Recommendations</h2>
-<ul>
-<% @user.recommendations.each do |recommendation| %>
-  <br>
-  <h5>Recommended <%= recommendation.wine.name %> with <%= recommendation.category.name %> on <%= recommendation.created_at.localtime.strftime("%m/%d/%Y") %></h5>
-  Comment: <%= recommendation.comment %><br>
-  <span>Edit</span>
-  <a href="/recommendations/<%=recommendation.id%>/edit"><ion-icon name="color-wand"></ion-icon></a>
-  <span>| Delete</span>
-  <a href="/recommendations/<%=recommendation.id%>" data-method="delete"><ion-icon name="trash"></ion-icon></a>
-  <br>
-<% end %>
-</ul>
+<div class="container">
+<div class="row">
+  <div class="col">
+
+    <h2>Your Wine Reviews</h2><br>
+    <% @user.reviews.each do |review| %>
+    <div class="card" style="width: 20rem;">
+      <div class="card-body">
+        <h5 class="card-title"><%= review.wine.name %></h5>
+        <h6 class="card-subtitle mb-2 text-muted"><%= review.created_at.localtime.strftime("%m/%d/%Y") %></h6>
+        <p class="card-text">
+      Title: <%= review.title %><br>
+      Content: <%= review.content %><br>
+      Rating: <%=review.rating%><br>
+      </p>
+      <span>Edit</span>
+      <a href="/wines/<%=review.wine.id%>/reviews/<%=review.id%>/edit"><ion-icon name="color-wand"></ion-icon></a>
+      <span>| Delete</span>
+      <a href="/wines/<%=review.wine.id%>/reviews/<%=review.id%>" data-method="delete"><ion-icon name="trash"></ion-icon></a>
+      <br>
+    <% end %>
+    <br>
+  </div>
+  </div>
+  </div>
+  <div class="col">
+    <h2>Your Recommendations</h2><br>
+    <% @user.recommendations.each do |recommendation| %>
+    <div class="card" style="width: 20rem;">
+      <div class="card-body">
+        <h5 class="card-title"><%= recommendation.wine.name %> with <%= recommendation.category.name %></h5>
+      <h6 class="card-subtitle mb-2 text-muted"><%= recommendation.created_at.localtime.strftime("%m/%d/%Y")%></h6>
+      <p class="card-text"><%= recommendation.comment %></p>
+      <span>Edit</span>
+      <a href="/recommendations/<%=recommendation.id%>/edit"><ion-icon name="color-wand"></ion-icon></a>
+      <span>| Delete</span>
+      <a href="/recommendations/<%=recommendation.id%>" data-method="delete"><ion-icon name="trash"></ion-icon></a>
+      <br>
+    <% end %>
+  </div>
+</div>
+</div>

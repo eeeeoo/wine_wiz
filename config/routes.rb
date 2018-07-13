@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   resources :recommendations
-  resources :pairings
-  resources :categories
-  resources :wines do
-    resources :reviews
+  resources :pairings, only: %i[index]
+  resources :categories, only: %i[index]
+  resources :wines, only: %i[index show] do
+    resources :reviews, only: %i[new create edit update]
   end
   resources :users, only: %i[new create show edit update]
   resources :sessions, only: %i[new create]
