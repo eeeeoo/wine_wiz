@@ -27,21 +27,20 @@
     <div class="card" style="width: 20rem;">
       <div class="card-body">
         <h5 class="card-title"><%= review.wine.name %></h5>
-        <h6 class="card-subtitle mb-2 text-muted"><%= review.created_at.localtime.strftime("%m/%d/%Y") %></h6>
+        <h6 class="card-subtitle mb-2 text-muted"><%= review.created_at.localtime.strftime("%m/%d/%Y") %></h6><br>
         <p class="card-text">
       Title: <%= review.title %><br>
       Content: <%= review.content %><br>
       Rating: <%=review.rating%><br>
-      </p>
+      </p><br>
       <span>Edit</span>
       <a href="/wines/<%=review.wine.id%>/reviews/<%=review.id%>/edit"><ion-icon name="color-wand"></ion-icon></a>
       <span>| Delete</span>
       <a href="/wines/<%=review.wine.id%>/reviews/<%=review.id%>" data-method="delete"><ion-icon name="trash"></ion-icon></a>
       <br>
-    <% end %>
-    <br>
   </div>
-  </div>
+  </div>   <br>   <% end %>
+
   </div>
   <div class="col">
     <h2>Your Recommendations</h2><br>
@@ -49,8 +48,8 @@
     <div class="card" style="width: 20rem;">
       <div class="card-body">
         <h5 class="card-title"><%= recommendation.wine.name %> with <%= recommendation.category.name %></h5>
-      <h6 class="card-subtitle mb-2 text-muted"><%= recommendation.created_at.localtime.strftime("%m/%d/%Y")%></h6>
-      <p class="card-text"><%= recommendation.comment %></p>
+      <h6 class="card-subtitle mb-2 text-muted"><%= recommendation.created_at.localtime.strftime("%m/%d/%Y")%></h6><br>
+      <p class="card-text"><%= recommendation.comment %></p><br>
       <span>Edit</span>
       <a href="/recommendations/<%=recommendation.id%>/edit"><ion-icon name="color-wand"></ion-icon></a>
       <span>| Delete</span>

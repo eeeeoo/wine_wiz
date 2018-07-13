@@ -15,7 +15,7 @@
        <div class="card" style="width: 18rem;">
          <div class="card-body">
            <h5 class="card-title"><%= recommendation.wine.name %> with <%= recommendation.category.name %></h5>
-           <h6 class="card-subtitle mb-2 text-muted"><%= recommendation.user.name %> 's recommendation</h6>
+           <h6 class="card-subtitle mb-2 text-muted"><%= recommendation.user.name %> 's recommendation</h6><br>
            <p class="card-text"><%= recommendation.comment %></p>
            <span><%= recommendation.created_at.localtime.strftime("%m/%d/%Y")%></span>
          </div>

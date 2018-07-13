@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :recommendations
+  resources :recommendations, only: %i[index edit create new update destroy]
   resources :pairings, only: %i[index]
   resources :categories, only: %i[index]
   resources :wines, only: %i[index show] do
